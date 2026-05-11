@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://dezignloop-theta.vercel.app/';  // ← ACTUALLY fixed: no space
+  const baseUrl = 'https://dezignloop-theta.vercel.app';  // ← NO trailing slash
 
   const routes = [
     '',
@@ -17,19 +17,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/mobile-app-development',
     '/services/custom-development',
     '/services/video-editing',
-    '/services/mascot-logo-design',     // ← Fixed: match your actual page URL
-    '/services/threed-logo',            // ← Fixed: lowercase, match actual URL
+    '/services/mascot-logo-design',
+    '/services/threed-logo',
     '/portfolio',
     '/pricing',
-    '/privacy',                         // ← Fixed: was '/privacy-policy '
-    '/refund',                          // ← Fixed: was '/refund-policy '
-    '/stories',                         // ← Fixed: was ' /stories' (space + leading space)
-    '/terms',                           // ← Add if you have this page
-    '/contact',                         // ← Add if you have this page
+    '/privacy',
+    '/refund',
+    '/stories',
+    '/terms',
+    '/contact',
   ];
 
   return routes.map((route) => ({
-    url: `${baseUrl}${route}`,          // ← This creates: https://dezignloop.com/services/web-design
+    url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: route === '' || route === '/services' ? 'weekly' : 'monthly',
     priority: route === '' ? 1 : route === '/services' ? 0.9 : 0.8,
