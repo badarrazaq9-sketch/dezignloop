@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://dezignloop.com';  // ← ACTUALLY fixed: no space
+  const baseUrl = 'https://dezignloop-theta.vercel.app/';  // ← ACTUALLY fixed: no space
 
   const routes = [
     '',
