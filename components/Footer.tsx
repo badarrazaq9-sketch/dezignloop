@@ -30,9 +30,10 @@ export default function Footer() {
                 priority
               />
             </div>
-<p className="text-slate-500 dark:text-slate-400 font-medium leading-relaxed mb-8 max-w-sm">
-  High-end design agency helping brands scale with speed, style, and precision. We specialize in web design, branding, and growth systems that transform ideas into powerful digital products and measurable results.
-</p>
+
+            <p className="text-slate-500 dark:text-slate-400 font-medium leading-relaxed mb-8 max-w-sm">
+              High-end design agency helping brands scale with speed, style, and precision. We specialize in web design, branding, and growth systems that transform ideas into powerful digital products and measurable results.
+            </p>
 
             <div className="flex gap-4 mt-6">
               <a
@@ -59,44 +60,180 @@ export default function Footer() {
           </div>
 
           <div className="md:col-span-2">
-            <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-8 text-slate-400 dark:text-slate-500">Services</h4>
+            <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-8 text-slate-400 dark:text-slate-500">
+              Services
+            </h4>
             <ul className="space-y-4 font-bold text-slate-600 dark:text-slate-300">
-              <li><Link href="/services/web-design" className="hover:text-primary transition-colors">Web Design</Link></li>
-              <li><Link href="/services/branding" className="hover:text-primary transition-colors">Branding</Link></li>
-              <li><Link href="/services/ecommerce-web-development" className="hover:text-primary transition-colors">Mobile App</Link></li>
-              <li><Link href="/services/lead-generation" className="hover:text-primary transition-colors">Lead Generation</Link></li>
-              <li><Link href="/services/lead-generation" className="hover:text-primary transition-colors">Social Media Marketing</Link></li>
-
+              <li>
+                <Link
+                  href="/services/web-design"
+                  className="hover:text-primary transition-colors"
+                >
+                  Web Design
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/branding"
+                  className="hover:text-primary transition-colors"
+                >
+                  Branding
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/ecommerce-web-development"
+                  className="hover:text-primary transition-colors"
+                >
+                  Mobile App
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/lead-generation"
+                  className="hover:text-primary transition-colors"
+                >
+                  Lead Generation
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/lead-generation"
+                  className="hover:text-primary transition-colors"
+                >
+                  Social Media Marketing
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div className="md:col-span-2">
-            <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-8 text-slate-400 dark:text-slate-500">Company</h4>
+            <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-8 text-slate-400 dark:text-slate-500">
+              Company
+            </h4>
             <ul className="space-y-4 font-bold text-slate-600 dark:text-slate-300">
-              <li><Link href="/portfolio" className="hover:text-primary transition-colors">Portfolio</Link></li>
-              <li><Link href="/services" className="hover:text-primary transition-colors">Services</Link></li>
-              <li><Link href="/contact" className="hover:text-primary transition-colors">Contact</Link></li>
-              <li><Link href="/pricing" className="hover:text-primary transition-colors">Pricing</Link></li>
+              <li>
+                <Link
+                  href="/portfolio"
+                  className="hover:text-primary transition-colors"
+                >
+                  Portfolio
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="hover:text-primary transition-colors"
+                >
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="hover:text-primary transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/pricing"
+                  className="hover:text-primary transition-colors"
+                >
+                  Pricing
+                </Link>
+              </li>
             </ul>
           </div>
 
           <div className="md:col-span-4">
-            <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-8 text-slate-400 dark:text-slate-500">Contact</h4>
+            <h4 className="font-black text-xs uppercase tracking-[0.2em] mb-8 text-slate-400 dark:text-slate-500">
+              Contact
+            </h4>
+
             <ul className="space-y-4 font-bold text-slate-600 dark:text-slate-300">
-              <li>Address: 4th St N #2239, Saint Petersburg, FL, United States, 33712</li>
-              <li><a href="mailto:support@dezignloop.com" className="hover:text-primary transition-colors">Email: support@dezignloop.com</a></li>
-              <li><a href="tel:+18434109324" className="hover:text-primary transition-colors">Phone: +1 (843)284 3078</a></li>
-              <li><a href="#booking-form" className="hover:text-primary transition-colors">Book a Discovery Call</a></li>
-            </ul> 
+              {/* USA Office */}
+              <li>
+                <span className="block text-slate-400 dark:text-slate-500 text-xs uppercase tracking-wider mb-1">
+                  USA Office
+                </span>
+                Address: 4th St N #2239, Saint Petersburg, FL, United States, 33712
+              </li>
+
+              <li>
+                <a
+                  href="tel:+18432843078"
+                  className="hover:text-primary transition-colors"
+                >
+                  Phone: +1 (843) 284 3078
+                </a>
+              </li>
+
+              {/* UK Office */}
+              <li>
+                <span className="block text-slate-400 dark:text-slate-500 text-xs uppercase tracking-wider mb-1">
+                  UK Office
+                </span>
+                Address: 167–169 Great Portland Street, 5th Floor, London, W1W 5PF, United Kingdom
+              </li>
+
+              <li>
+                <a
+                  href="tel:+442079460958"
+                  className="hover:text-primary transition-colors"
+                >
+                  Phone: +44 20 7946 0958
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="mailto:support@dezignloop.com"
+                  className="hover:text-primary transition-colors"
+                >
+                  Email: support@dezignloop.com
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#booking-form"
+                  className="hover:text-primary transition-colors"
+                >
+                  Book a Discovery Call
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
         <div className="pt-12 border-t border-slate-200 dark:border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-slate-400 dark:text-slate-500 font-bold text-xs uppercase tracking-widest">© 2019-2026 DezignLoop. All rights reserved.</p>
+          <p className="text-slate-400 dark:text-slate-500 font-bold text-xs uppercase tracking-widest">
+            © 2019-2026 DezignLoop. All rights reserved.
+          </p>
+
           <div className="flex gap-8 text-xs font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest">
-            <Link href="/privacy-policy" className="hover:text-slate-900 dark:hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms-of-services" className="hover:text-slate-900 dark:hover:text-white transition-colors">Terms And Condtions</Link>
-            <Link href="/refund-policy" className="hover:text-slate-900 dark:hover:text-white transition-colors">Refund Policy</Link>
+            <Link
+              href="/privacy-policy"
+              className="hover:text-slate-900 dark:hover:text-white transition-colors"
+            >
+              Privacy Policy
+            </Link>
+
+            <Link
+              href="/terms-of-services"
+              className="hover:text-slate-900 dark:hover:text-white transition-colors"
+            >
+              Terms And Condtions
+            </Link>
+
+            <Link
+              href="/refund-policy"
+              className="hover:text-slate-900 dark:hover:text-white transition-colors"
+            >
+              Refund Policy
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,3 @@
-// app/contact/page.tsx
 'use client';
 
 import React from 'react';
@@ -80,17 +79,51 @@ const ContactPage = () => {
                       </div>
                     </div>
 
-                    {/* Office */}
-                    <div className="flex items-center gap-6 group">
-                      <div className="w-14 h-14 rounded-2xl bg-white dark:bg-slate-800 flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform duration-300">
+                    {/* Offices */}
+                    <div className="flex items-start gap-6 group">
+                      <div className="w-14 h-14 rounded-2xl bg-white dark:bg-slate-800 flex items-center justify-center text-primary shadow-sm group-hover:scale-110 transition-transform duration-300 shrink-0">
                         <Building size={24} />
                       </div>
+
                       <div>
-                        <div className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">
-                          Office
+                        <div className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-4">
+                          Offices
                         </div>
-                        <div className="text-xl font-bold text-slate-900 dark:text-white">
-                          4th St N #2239, Saint Petersburg, FL, United States, 33712
+
+                        {/* USA Office */}
+                        <div className="mb-6">
+                          <div className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-1">
+                            USA Office
+                          </div>
+
+                          <div className="text-xl font-bold text-slate-900 dark:text-white">
+                            4th St N #2239, Saint Petersburg, FL, United States, 33712
+                          </div>
+
+                          <a
+                            href="tel:+18432843078"
+                            className="inline-block mt-2 text-lg font-bold text-slate-900 dark:text-white hover:text-primary transition-colors"
+                          >
+                            +1 (843) 284-3078
+                          </a>
+                        </div>
+
+                        {/* UK Office */}
+                        <div>
+                          <div className="text-sm font-bold uppercase tracking-widest text-slate-400 mb-1">
+                            UK Office
+                          </div>
+
+                          <div className="text-xl font-bold text-slate-900 dark:text-white">
+                            167–169 Great Portland Street, 5th Floor, London, W1W 5PF, United Kingdom
+                          </div>
+
+                          <a
+                            href="tel:+442079460958"
+                            className="inline-block mt-2 text-lg font-bold text-slate-900 dark:text-white hover:text-primary transition-colors"
+                          >
+                            +44 20 7946 0958
+                          </a>
                         </div>
                       </div>
                     </div>
@@ -118,12 +151,10 @@ const ContactPage = () => {
 
       {/* Booking Section - ADDED TEXT ONLY, BOOKINGSECTION UNCHANGED */}
       <BlurIn delay={0.2}>
-       
-          <p className="text-center text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto text-lg">
-            Join 250+ business owners who switched to professional websites
-          </p>
-          <BookingSection />
-     
+        <p className="text-center text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto text-lg">
+          Join 250+ business owners who switched to professional websites
+        </p>
+        <BookingSection />
       </BlurIn>
 
       <LeadPopup />
