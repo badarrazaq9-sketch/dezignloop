@@ -6,16 +6,38 @@ import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'How Much Does a Website Cost for Small Business? (2026)',
-  description: 'Small business website costs in 2026: DIY vs freelancer vs agency pricing, what drives the price, and what you should actually budget.',
+  description: 'How much does a website cost for a small business in 2026? Real US pricing for DIY, freelancer & agency builds — what drives the price and what you should budget.',
   keywords: ['how much does a website cost for a small business'],
   alternates: {
     canonical: 'https://dezignloop.com/blog/how-much-does-a-website-cost-small-business-2026',
   },
   openGraph: {
     title: 'How Much Does a Website Cost for Small Business? (2026)',
-    description: 'Small business website costs in 2026: DIY vs freelancer vs agency pricing, what drives the price, and what you should actually budget.',
+    description: 'How much does a website cost for a small business in 2026? Real US pricing for DIY, freelancer & agency builds — what drives the price and what you should budget.',
     url: 'https://dezignloop.com/blog/how-much-does-a-website-cost-small-business-2026',
+    siteName: 'DezignLoop',
     type: 'article',
+    publishedTime: '2026-10-19T12:00:00-04:00',
+    section: 'Guides',
+    tags: [
+    'website cost',
+    'small business website',
+    'web design pricing'
+    ],
+    images: [
+      {
+        url: 'https://dezignloop.com/icon-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'DezignLoop',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Much Does a Website Cost for Small Business? (2026)',
+    description: 'How much does a website cost for a small business in 2026? Real US pricing for DIY, freelancer & agency builds — what drives the price and what you should budget.',
+    images: ['https://dezignloop.com/icon-512x512.png'],
   },
 };
 
@@ -23,8 +45,10 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How Much Does a Website Cost for Small Business? (2026)",
-  "description": "Small business website costs in 2026: DIY vs freelancer vs agency pricing, what drives the price, and what you should actually budget.",
+  "description": "How much does a website cost for a small business in 2026? Real US pricing for DIY, freelancer & agency builds — what drives the price and what you should budget.",
   "url": "https://dezignloop.com/blog/how-much-does-a-website-cost-small-business-2026",
+  "image": "https://dezignloop.com/icon-512x512.png",
+  "articleSection": "Guides",
   "datePublished": "2026-10-19",
   "dateModified": "2026-10-19",
   "author": {
