@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description:
     'Transparent, no-hidden-fee pricing for web design, branding, SEO, mobile apps, social media marketing & more. Packages starting from $349 – built for small business budgets and real growth.',
   alternates: {
-    canonical: 'https://dezignloop.com/pricing',
+    canonical: 'https://www.dezignloop.com/pricing',
   },
   openGraph: {
     title: 'Pricing – DezignLoop Packages',
     description: 'Affordable digital services for small businesses. Clear pricing, no surprises.',
-    url: 'https://dezignloop.com/pricing',
+    url: 'https://www.dezignloop.com/pricing',
     images: [
       {
         url: '/og-pricing.jpg', // Add this 1200×630 image to /public/
@@ -28,14 +28,14 @@ const pricingSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/pricing/#webpage",
-      "url": "https://dezignloop.com/pricing",
+      "@id": "https://www.dezignloop.com/pricing/#webpage",
+      "url": "https://www.dezignloop.com/pricing",
       "name": "Pricing – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Transparent pricing for web design, branding, SEO, mobile apps, and social media marketing. Packages starting from $349 for small businesses.",
       "breadcrumb": {
@@ -45,13 +45,13 @@ const pricingSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Pricing",
-            "item": "https://dezignloop.com/pricing"
+            "item": "https://www.dezignloop.com/pricing"
           }
         ]
       }
@@ -68,7 +68,7 @@ const pricingSchema = {
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "offeredBy": {
-            "@id": "https://dezignloop.com/#organization"
+            "@id": "https://www.dezignloop.com/#organization"
           }
         },
         {
@@ -80,7 +80,7 @@ const pricingSchema = {
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "offeredBy": {
-            "@id": "https://dezignloop.com/#organization"
+            "@id": "https://www.dezignloop.com/#organization"
           }
         },
         {
@@ -92,7 +92,7 @@ const pricingSchema = {
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "offeredBy": {
-            "@id": "https://dezignloop.com/#organization"
+            "@id": "https://www.dezignloop.com/#organization"
           }
         },
         {
@@ -104,7 +104,7 @@ const pricingSchema = {
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "offeredBy": {
-            "@id": "https://dezignloop.com/#organization"
+            "@id": "https://www.dezignloop.com/#organization"
           }
         },
         {
@@ -116,7 +116,7 @@ const pricingSchema = {
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "offeredBy": {
-            "@id": "https://dezignloop.com/#organization"
+            "@id": "https://www.dezignloop.com/#organization"
           }
         },
         {
@@ -128,7 +128,7 @@ const pricingSchema = {
           "priceCurrency": "USD",
           "availability": "https://schema.org/InStock",
           "offeredBy": {
-            "@id": "https://dezignloop.com/#organization"
+            "@id": "https://www.dezignloop.com/#organization"
           }
         }
       ]

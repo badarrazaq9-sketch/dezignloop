@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description:
     'Grow your Instagram, Facebook & TikTok presence. Content creation, targeted ads, engagement & lead generation tailored for startups and local brands.',
   alternates: {
-    canonical: 'https://dezignloop.com/services/social-media-marketing-smm',
+    canonical: 'https://www.dezignloop.com/services/social-media-marketing-smm',
   },
   openGraph: {
     title: 'Social Media Marketing – DezignLoop',
     description: 'Grow your Instagram, Facebook & TikTok presence with content creation, targeted ads & engagement.',
-    url: 'https://dezignloop.com/services/social-media-marketing-smm',
+    url: 'https://www.dezignloop.com/services/social-media-marketing-smm',
     images: [
       {
         url: '/og-social-media.jpg',
@@ -31,14 +31,14 @@ const socialMediaSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/services/social-media-marketing-smm/#webpage",
-      "url": "https://dezignloop.com/services/social-media-marketing-smm",
+      "@id": "https://www.dezignloop.com/services/social-media-marketing-smm/#webpage",
+      "url": "https://www.dezignloop.com/services/social-media-marketing-smm",
       "name": "Social Media Marketing for Small Businesses – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Grow your Instagram, Facebook & TikTok presence. Content creation, targeted ads, engagement & lead generation tailored for startups and local brands.",
       "breadcrumb": {
@@ -48,19 +48,19 @@ const socialMediaSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://dezignloop.com/services"
+            "item": "https://www.dezignloop.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Social Media Marketing",
-            "item": "https://dezignloop.com/services/social-media-marketing-smm"
+            "item": "https://www.dezignloop.com/services/social-media-marketing-smm"
           }
         ]
       }
@@ -69,7 +69,7 @@ const socialMediaSchema = {
       "@type": "Service",
       "serviceType": "Social Media Marketing",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",

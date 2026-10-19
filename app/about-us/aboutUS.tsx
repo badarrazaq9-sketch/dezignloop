@@ -18,12 +18,12 @@ const schemaData = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://dezignloop.com/#organization",
+      "@id": "https://www.dezignloop.com/#organization",
       "name": "DezignLoop",
-      "url": "https://dezignloop.com",
+      "url": "https://www.dezignloop.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://dezignloop.com/assets/logo.png",
+        "url": "https://www.dezignloop.com/assets/logo.png",
         "width": 512,
         "height": 512
       },
@@ -45,27 +45,27 @@ const schemaData = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://dezignloop.com/#website",
-      "url": "https://dezignloop.com",
+      "@id": "https://www.dezignloop.com/#website",
+      "url": "https://www.dezignloop.com",
       "name": "DezignLoop",
       "publisher": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://dezignloop.com/?s={search_term_string}"
+          "urlTemplate": "https://www.dezignloop.com/?s={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       }
     },
     {
       "@type": ["ProfessionalService", "LocalBusiness"],
-      "@id": "https://dezignloop.com/#business",
+      "@id": "https://www.dezignloop.com/#business",
       "name": "DezignLoop",
-      "image": "https://dezignloop.com/assets/Team.png",
-      "url": "https://dezignloop.com",
+      "image": "https://www.dezignloop.com/assets/Team.png",
+      "url": "https://www.dezignloop.com",
       "telephone": "+1-XXX-XXX-XXXX",
       "email": "support@dezignloop.com",
       "priceRange": "$$",
@@ -110,7 +110,7 @@ const schemaData = {
       "@type": "Service",
       "serviceType": "Web Design & Development",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",
@@ -122,7 +122,7 @@ const schemaData = {
       "@type": "Service",
       "serviceType": "E-commerce Development",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",
@@ -134,7 +134,7 @@ const schemaData = {
       "@type": "Service",
       "serviceType": "CRM Development",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",
@@ -146,7 +146,7 @@ const schemaData = {
       "@type": "Service",
       "serviceType": "Logo Design & Brand Identity",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",
@@ -156,14 +156,14 @@ const schemaData = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/about-us/#webpage",
-      "url": "https://dezignloop.com/about-us",
+      "@id": "https://www.dezignloop.com/about-us/#webpage",
+      "url": "https://www.dezignloop.com/about-us",
       "name": "About Us - DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Learn about DezignLoop, a premium web design agency helping businesses grow with websites, branding, CRM, ecommerce, and digital marketing."
     }

@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/admin/', '/private/', '/login/'],
     },
-    sitemap: 'https://dezignloop.com/sitemap.xml',  // ← Fixed: removed space
+    sitemap: 'https://www.dezignloop.com/sitemap.xml',
   };
 }

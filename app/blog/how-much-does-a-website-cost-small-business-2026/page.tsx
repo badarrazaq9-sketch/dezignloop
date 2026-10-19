@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   description: 'How much does a website cost for a small business in 2026? Real US pricing for DIY, freelancer & agency builds — what drives the price and what you should budget.',
   keywords: ['how much does a website cost for a small business'],
   alternates: {
-    canonical: 'https://dezignloop.com/blog/how-much-does-a-website-cost-small-business-2026',
+    canonical: 'https://www.dezignloop.com/blog/how-much-does-a-website-cost-small-business-2026',
   },
   openGraph: {
     title: 'How Much Does a Website Cost for Small Business? (2026)',
     description: 'How much does a website cost for a small business in 2026? Real US pricing for DIY, freelancer & agency builds — what drives the price and what you should budget.',
-    url: 'https://dezignloop.com/blog/how-much-does-a-website-cost-small-business-2026',
+    url: 'https://www.dezignloop.com/blog/how-much-does-a-website-cost-small-business-2026',
     siteName: 'DezignLoop',
     type: 'article',
     publishedTime: '2026-10-19T12:00:00-04:00',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     ],
     images: [
       {
-        url: 'https://dezignloop.com/icon-512x512.png',
+        url: 'https://www.dezignloop.com/icon-512x512.png',
         width: 512,
         height: 512,
         alt: 'DezignLoop',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'How Much Does a Website Cost for Small Business? (2026)',
     description: 'How much does a website cost for a small business in 2026? Real US pricing for DIY, freelancer & agency builds — what drives the price and what you should budget.',
-    images: ['https://dezignloop.com/icon-512x512.png'],
+    images: ['https://www.dezignloop.com/icon-512x512.png'],
   },
 };
 
@@ -46,24 +46,24 @@ const articleSchema = {
   "@type": "BlogPosting",
   "headline": "How Much Does a Website Cost for Small Business? (2026)",
   "description": "How much does a website cost for a small business in 2026? Real US pricing for DIY, freelancer & agency builds — what drives the price and what you should budget.",
-  "url": "https://dezignloop.com/blog/how-much-does-a-website-cost-small-business-2026",
-  "image": "https://dezignloop.com/icon-512x512.png",
+  "url": "https://www.dezignloop.com/blog/how-much-does-a-website-cost-small-business-2026",
+  "image": "https://www.dezignloop.com/icon-512x512.png",
   "articleSection": "Guides",
   "datePublished": "2026-10-19",
   "dateModified": "2026-10-19",
   "author": {
     "@type": "Organization",
     "name": "DezignLoop",
-    "url": "https://dezignloop.com/"
+    "url": "https://www.dezignloop.com/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "DezignLoop",
-    "url": "https://dezignloop.com/"
+    "url": "https://www.dezignloop.com/"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://dezignloop.com/blog/how-much-does-a-website-cost-small-business-2026"
+    "@id": "https://www.dezignloop.com/blog/how-much-does-a-website-cost-small-business-2026"
   }
 };
 

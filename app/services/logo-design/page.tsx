@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description:
     'Professional logo design and brand identity packages for small businesses and startups. Fast turnaround, unlimited revisions, full ownership. Packages start from $125. Get your custom logo today.',
   alternates: {
-    canonical: 'https://dezignloop.com/services/logo-design',
+    canonical: 'https://www.dezignloop.com/services/logo-design',
   },
   openGraph: {
     title: 'Logo Design Services – DezignLoop',
     description: 'Professional logo design and brand identity packages starting from $125.',
-    url: 'https://dezignloop.com/services/logo-design',
+    url: 'https://www.dezignloop.com/services/logo-design',
     images: [
       {
         url: '/og-logo-design.jpg',
@@ -32,14 +32,14 @@ const logoDesignSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/services/logo-design/#webpage",
-      "url": "https://dezignloop.com/services/logo-design",
+      "@id": "https://www.dezignloop.com/services/logo-design/#webpage",
+      "url": "https://www.dezignloop.com/services/logo-design",
       "name": "Logo Design Services for Small Businesses – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Professional logo design and brand identity packages for small businesses and startups. Fast turnaround, unlimited revisions, full ownership. Packages start from $125.",
       "breadcrumb": {
@@ -49,19 +49,19 @@ const logoDesignSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://dezignloop.com/services"
+            "item": "https://www.dezignloop.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Logo Design",
-            "item": "https://dezignloop.com/services/logo-design"
+            "item": "https://www.dezignloop.com/services/logo-design"
           }
         ]
       }
@@ -70,7 +70,7 @@ const logoDesignSchema = {
       "@type": "Service",
       "serviceType": "Logo Design",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",

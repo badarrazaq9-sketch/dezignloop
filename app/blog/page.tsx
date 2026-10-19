@@ -9,18 +9,18 @@ export const metadata: Metadata = {
   description:
     'Practical guides for US small businesses: website costs, platform comparisons, website mistakes to fix, and local SEO that wins customers.',
   alternates: {
-    canonical: 'https://dezignloop.com/blog',
+    canonical: 'https://www.dezignloop.com/blog',
   },
   openGraph: {
     title: 'DezignLoop Blog \u2013 Small Business Guides',
     description:
       'Practical guides for US small businesses: website costs, platform comparisons, and local SEO.',
-    url: 'https://dezignloop.com/blog',
+    url: 'https://www.dezignloop.com/blog',
     siteName: 'DezignLoop',
     type: 'website',
     images: [
       {
-        url: 'https://dezignloop.com/icon-512x512.png',
+        url: 'https://www.dezignloop.com/icon-512x512.png',
         width: 512,
         height: 512,
         alt: 'DezignLoop',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: 'DezignLoop Blog \u2013 Small Business Guides',
     description:
       'Practical guides for US small businesses: website costs, platform comparisons, and local SEO.',
-    images: ['https://dezignloop.com/icon-512x512.png'],
+    images: ['https://www.dezignloop.com/icon-512x512.png'],
   },
 };
 

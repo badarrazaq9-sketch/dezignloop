@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     'Explore our portfolio: high-converting websites, powerful branding, mobile apps, local SEO campaigns, and marketing results built for small businesses just like yours. See the real impact we deliver.',
   alternates: {
-    canonical: 'https://dezignloop.com/portfolio',
+    canonical: 'https://www.dezignloop.com/portfolio',
   },
   openGraph: {
     title: 'Portfolio – DezignLoop Success Stories',
     description:
       'Real projects, real growth: websites, branding, apps & marketing that helped small businesses thrive online.',
-    url: 'https://dezignloop.com/portfolio',
+    url: 'https://www.dezignloop.com/portfolio',
     images: [
       {
         url: '/og-portfolio.jpg', // ← Add this 1200×630 image to /public/
@@ -29,14 +29,14 @@ const portfolioSchema = {
   "@graph": [
     {
       "@type": "CollectionPage",
-      "@id": "https://dezignloop.com/portfolio/#webpage",
-      "url": "https://dezignloop.com/portfolio",
+      "@id": "https://www.dezignloop.com/portfolio/#webpage",
+      "url": "https://www.dezignloop.com/portfolio",
       "name": "Portfolio – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Explore DezignLoop's portfolio of high-converting websites, powerful branding, mobile apps, local SEO campaigns, and marketing results for small businesses.",
       "breadcrumb": {
@@ -46,13 +46,13 @@ const portfolioSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Portfolio",
-            "item": "https://dezignloop.com/portfolio"
+            "item": "https://www.dezignloop.com/portfolio"
           }
         ]
       }
@@ -68,7 +68,7 @@ const portfolioSchema = {
             "name": "Website Design & Development",
             "description": "High-converting, responsive websites built for small businesses to attract leads and drive sales.",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -80,7 +80,7 @@ const portfolioSchema = {
             "name": "Brand Identity & Logo Design",
             "description": "Professional logo design and complete brand identity packages for business transformation.",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -92,7 +92,7 @@ const portfolioSchema = {
             "name": "Mobile App Development",
             "description": "Custom mobile applications for iOS and Android to extend business reach.",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -104,7 +104,7 @@ const portfolioSchema = {
             "name": "Local SEO & Marketing Campaigns",
             "description": "Results-driven SEO and digital marketing campaigns to boost local visibility.",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -116,7 +116,7 @@ const portfolioSchema = {
             "name": "E-commerce Development",
             "description": "Full-scale ecommerce solutions with Shopify, WooCommerce, and custom platforms.",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -128,7 +128,7 @@ const portfolioSchema = {
             "name": "CRM & Web Application Development",
             "description": "Custom CRM systems and web applications to automate workflows and manage customers.",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         }

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description:
     'Targeted campaigns that deliver qualified leads ready to buy. High-quality traffic, conversion-focused strategies for B2B companies and service providers.',
   alternates: {
-    canonical: 'https://dezignloop.com/services/lead-generation',
+    canonical: 'https://www.dezignloop.com/services/lead-generation',
   },
   openGraph: {
     title: 'Lead Generation Services – DezignLoop',
     description: 'Targeted lead generation campaigns with qualified leads ready to buy.',
-    url: 'https://dezignloop.com/services/lead-generation',
+    url: 'https://www.dezignloop.com/services/lead-generation',
     images: [
       {
         url: '/og-lead-generation.jpg',
@@ -32,14 +32,14 @@ const leadGenSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/services/lead-generation/#webpage",
-      "url": "https://dezignloop.com/services/lead-generation",
+      "@id": "https://www.dezignloop.com/services/lead-generation/#webpage",
+      "url": "https://www.dezignloop.com/services/lead-generation",
       "name": "Lead Generation Services for Small Businesses – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Targeted campaigns that deliver qualified leads ready to buy. High-quality traffic, conversion-focused strategies for B2B companies and service providers.",
       "breadcrumb": {
@@ -49,19 +49,19 @@ const leadGenSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://dezignloop.com/services"
+            "item": "https://www.dezignloop.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Lead Generation",
-            "item": "https://dezignloop.com/services/lead-generation"
+            "item": "https://www.dezignloop.com/services/lead-generation"
           }
         ]
       }
@@ -70,7 +70,7 @@ const leadGenSchema = {
       "@type": "Service",
       "serviceType": "Lead Generation",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",

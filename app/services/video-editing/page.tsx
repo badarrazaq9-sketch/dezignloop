@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description:
     'Professional editing for ads, Reels, YouTube & product videos. Fast-paced, engaging cuts that boost views, retention and conversions. Quick turnaround.',
   alternates: {
-    canonical: 'https://dezignloop.com/services/video-editing',
+    canonical: 'https://www.dezignloop.com/services/video-editing',
   },
   openGraph: {
     title: 'Video Editing Services – DezignLoop',
     description: 'Professional video editing for ads, Reels, YouTube & product videos with quick turnaround.',
-    url: 'https://dezignloop.com/services/video-editing',
+    url: 'https://www.dezignloop.com/services/video-editing',
     images: [
       {
         url: '/og-video-editing.jpg',
@@ -32,14 +32,14 @@ const videoEditingSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/services/video-editing/#webpage",
-      "url": "https://dezignloop.com/services/video-editing",
+      "@id": "https://www.dezignloop.com/services/video-editing/#webpage",
+      "url": "https://www.dezignloop.com/services/video-editing",
       "name": "Video Editing Services for Small Businesses – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Professional editing for ads, Reels, YouTube & product videos. Fast-paced, engaging cuts that boost views, retention and conversions. Quick turnaround.",
       "breadcrumb": {
@@ -49,19 +49,19 @@ const videoEditingSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://dezignloop.com/services"
+            "item": "https://www.dezignloop.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Video Editing",
-            "item": "https://dezignloop.com/services/video-editing"
+            "item": "https://www.dezignloop.com/services/video-editing"
           }
         ]
       }
@@ -70,7 +70,7 @@ const videoEditingSchema = {
       "@type": "Service",
       "serviceType": "Video Editing",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",

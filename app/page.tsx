@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     'Affordable, high-conversion web design, branding, SEO, mobile apps & marketing built for small businesses in the USA. Fast delivery, real results. Free consultation today!',
   alternates: {
-    canonical: 'https://dezignloop.com',
+    canonical: 'https://www.dezignloop.com',
   },
   openGraph: {
     title: 'DezignLoop – Grow Your Small Business Online',
     description:
       'Custom websites, branding, local SEO, apps and marketing that help small businesses attract more customers and increase revenue.',
-    url: 'https://dezignloop.com',
+    url: 'https://www.dezignloop.com',
     siteName: 'DezignLoop',
     images: [
       {
@@ -41,14 +41,14 @@ const homePageSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/#webpage",  // ← FIXED: was missing / before #
-      "url": "https://dezignloop.com",
+      "@id": "https://www.dezignloop.com/#webpage",  // ← FIXED: was missing / before #
+      "url": "https://www.dezignloop.com",
       "name": "DezignLoop | Web Design & Digital Growth for Small Businesses",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Affordable, high-conversion web design, branding, SEO, mobile apps & marketing built for small businesses in the USA.",
       "breadcrumb": {
@@ -58,7 +58,7 @@ const homePageSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com"
+            "item": "https://www.dezignloop.com"
           }
         ]
       }
@@ -72,9 +72,9 @@ const homePageSchema = {
           "item": {
             "@type": "Service",
             "name": "Web Design",
-            "url": "https://dezignloop.com/services/web-design",
+            "url": "https://www.dezignloop.com/services/web-design",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -84,9 +84,9 @@ const homePageSchema = {
           "item": {
             "@type": "Service",
             "name": "Branding",
-            "url": "https://dezignloop.com/services/branding",
+            "url": "https://www.dezignloop.com/services/branding",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -96,9 +96,9 @@ const homePageSchema = {
           "item": {
             "@type": "Service",
             "name": "SEO",
-            "url": "https://dezignloop.com/services/search-engine-optimization-seo",
+            "url": "https://www.dezignloop.com/services/search-engine-optimization-seo",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -108,9 +108,9 @@ const homePageSchema = {
           "item": {
             "@type": "Service",
             "name": "Mobile App Development",
-            "url": "https://dezignloop.com/services/mobile-app-development",
+            "url": "https://www.dezignloop.com/services/mobile-app-development",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -120,9 +120,9 @@ const homePageSchema = {
           "item": {
             "@type": "Service",
             "name": "E-commerce Development",
-            "url": "https://dezignloop.com/services/ecommerce-web-development",
+            "url": "https://www.dezignloop.com/services/ecommerce-web-development",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         }

@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description:
     'Custom, fast-loading, mobile-friendly websites built for small businesses. High-conversion designs, SEO-ready, responsive across all devices. Affordable packages starting from $999.',
   alternates: {
-    canonical: 'https://dezignloop.com/services/web-design',
+    canonical: 'https://www.dezignloop.com/services/web-design',
   },
   openGraph: {
     title: 'Web Design Services – DezignLoop',
     description: 'Custom, fast-loading, mobile-friendly websites for small businesses starting from $999.',
-    url: 'https://dezignloop.com/services/web-design',
+    url: 'https://www.dezignloop.com/services/web-design',
     images: [
       {
         url: '/og-web-design.jpg',
@@ -32,14 +32,14 @@ const webDesignSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/services/web-design/#webpage",
-      "url": "https://dezignloop.com/services/web-design",
+      "@id": "https://www.dezignloop.com/services/web-design/#webpage",
+      "url": "https://www.dezignloop.com/services/web-design",
       "name": "Web Design Services for Small Businesses – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Custom, fast-loading, mobile-friendly websites built for small businesses. High-conversion designs, SEO-ready, responsive across all devices. Affordable packages starting from $999.",
       "breadcrumb": {
@@ -49,19 +49,19 @@ const webDesignSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://dezignloop.com/services"
+            "item": "https://www.dezignloop.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Web Design",
-            "item": "https://dezignloop.com/services/web-design"
+            "item": "https://www.dezignloop.com/services/web-design"
           }
         ]
       }
@@ -70,7 +70,7 @@ const webDesignSchema = {
       "@type": "Service",
       "serviceType": "Web Design",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",

@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description:
     'Learn about DezignLoop, a USA-based premium web design agency helping small businesses grow with websites, branding, SEO, CRM, ecommerce, and digital marketing since 2019.',
   alternates: {
-    canonical: 'https://dezignloop.com/about-us',
+    canonical: 'https://www.dezignloop.com/about-us',
   },
   openGraph: {
     title: 'About DezignLoop – Your Digital Growth Partner',
     description: 'Premium web design agency crafting digital excellence since 2019. Helping small businesses dominate and grow online.',
-    url: 'https://dezignloop.com/about-us',
+    url: 'https://www.dezignloop.com/about-us',
     images: [
       {
         url: '/og-about.jpg',
@@ -28,14 +28,14 @@ const aboutSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/about-us/#webpage",
-      "url": "https://dezignloop.com/about-us",
+      "@id": "https://www.dezignloop.com/about-us/#webpage",
+      "url": "https://www.dezignloop.com/about-us",
       "name": "About Us – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Learn about DezignLoop, a premium web design agency helping businesses grow with websites, branding, CRM, ecommerce, and digital marketing.",
       "breadcrumb": {
@@ -45,13 +45,13 @@ const aboutSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "About Us",
-            "item": "https://dezignloop.com/about-us"
+            "item": "https://www.dezignloop.com/about-us"
           }
         ]
       }

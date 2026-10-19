@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description:
     'Rank higher on Google and attract more local customers. Google Business optimization, citations, reviews & keyword strategy. Visible results in weeks.',
   alternates: {
-    canonical: 'https://dezignloop.com/services/search-engine-optimization-seo',
+    canonical: 'https://www.dezignloop.com/services/search-engine-optimization-seo',
   },
   openGraph: {
     title: 'Local SEO Services – DezignLoop',
     description: 'Rank higher on Google and attract more local customers with proven SEO strategies.',
-    url: 'https://dezignloop.com/services/search-engine-optimization-seo',
+    url: 'https://www.dezignloop.com/services/search-engine-optimization-seo',
     images: [
       {
         url: '/og-seo.jpg',
@@ -32,14 +32,14 @@ const seoSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/services/search-engine-optimization-seo/#webpage",
-      "url": "https://dezignloop.com/services/search-engine-optimization-seo",
+      "@id": "https://www.dezignloop.com/services/search-engine-optimization-seo/#webpage",
+      "url": "https://www.dezignloop.com/services/search-engine-optimization-seo",
       "name": "Local SEO Services for Small Businesses – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Rank higher on Google and attract more local customers. Google Business optimization, citations, reviews & keyword strategy. Visible results in weeks.",
       "breadcrumb": {
@@ -49,19 +49,19 @@ const seoSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://dezignloop.com/services"
+            "item": "https://www.dezignloop.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Local SEO",
-            "item": "https://dezignloop.com/services/search-engine-optimization-seo"
+            "item": "https://www.dezignloop.com/services/search-engine-optimization-seo"
           }
         ]
       }
@@ -70,7 +70,7 @@ const seoSchema = {
       "@type": "Service",
       "serviceType": "Local SEO & Search Engine Optimization",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",

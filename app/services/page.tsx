@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description:
     'Full range of digital services for small businesses: professional web design, branding, local SEO, mobile app development, and growth marketing. Get started today.',
   alternates: {
-    canonical: 'https://dezignloop.com/services',
+    canonical: 'https://www.dezignloop.com/services',
   },
   openGraph: {
     title: 'Our Services – DezignLoop',
     description: 'Web design, SEO, apps, branding, and marketing services for small businesses.',
-    url: 'https://dezignloop.com/services',
+    url: 'https://www.dezignloop.com/services',
     images: [
       {
         url: '/og-services.jpg',
@@ -32,14 +32,14 @@ const servicesSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/services/#webpage",
-      "url": "https://dezignloop.com/services",
+      "@id": "https://www.dezignloop.com/services/#webpage",
+      "url": "https://www.dezignloop.com/services",
       "name": "Our Services – Web Design, SEO, Apps & Marketing – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Full range of digital services for small businesses: professional web design, branding, local SEO, mobile app development, and growth marketing.",
       "breadcrumb": {
@@ -49,13 +49,13 @@ const servicesSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://dezignloop.com/services"
+            "item": "https://www.dezignloop.com/services"
           }
         ]
       }
@@ -70,9 +70,9 @@ const servicesSchema = {
             "@type": "Service",
             "name": "Web Design",
             "description": "Professional websites that look great, load fast, and turn visitors into customers.",
-            "url": "https://dezignloop.com/services/web-design",
+            "url": "https://www.dezignloop.com/services/web-design",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -83,9 +83,9 @@ const servicesSchema = {
             "@type": "Service",
             "name": "E-commerce Development",
             "description": "Custom e-commerce websites that scale and provide seamless shopping experiences.",
-            "url": "https://dezignloop.com/services/ecommerce-web-development",
+            "url": "https://www.dezignloop.com/services/ecommerce-web-development",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -96,9 +96,9 @@ const servicesSchema = {
             "@type": "Service",
             "name": "Logo Design",
             "description": "Professional logo and brand identity that builds trust and makes your business stand out.",
-            "url": "https://dezignloop.com/services/logo-design",
+            "url": "https://www.dezignloop.com/services/logo-design",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -109,9 +109,9 @@ const servicesSchema = {
             "@type": "Service",
             "name": "Lead Generation",
             "description": "Targeted campaigns that generate high-quality leads ready to convert.",
-            "url": "https://dezignloop.com/services/lead-generation",
+            "url": "https://www.dezignloop.com/services/lead-generation",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -122,9 +122,9 @@ const servicesSchema = {
             "@type": "Service",
             "name": "SEO",
             "description": "Proven search engine optimization strategies to improve visibility and drive traffic.",
-            "url": "https://dezignloop.com/services/search-engine-optimization-seo",
+            "url": "https://www.dezignloop.com/services/search-engine-optimization-seo",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -135,9 +135,9 @@ const servicesSchema = {
             "@type": "Service",
             "name": "Social Media Marketing",
             "description": "Build your social presence, engage your audience, and generate leads.",
-            "url": "https://dezignloop.com/services/social-media-marketing-smm",
+            "url": "https://www.dezignloop.com/services/social-media-marketing-smm",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -148,9 +148,9 @@ const servicesSchema = {
             "@type": "Service",
             "name": "Branding",
             "description": "Strong branding that makes your business memorable and builds trust.",
-            "url": "https://dezignloop.com/services/branding",
+            "url": "https://www.dezignloop.com/services/branding",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -161,9 +161,9 @@ const servicesSchema = {
             "@type": "Service",
             "name": "App Development",
             "description": "iOS and Android apps designed to drive user engagement and business growth.",
-            "url": "https://dezignloop.com/services/mobile-app-development",
+            "url": "https://www.dezignloop.com/services/mobile-app-development",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         },
@@ -174,9 +174,9 @@ const servicesSchema = {
             "@type": "Service",
             "name": "Custom Development",
             "description": "Web applications and software built around your unique business requirements.",
-            "url": "https://dezignloop.com/services/custom-development",
+            "url": "https://www.dezignloop.com/services/custom-development",
             "provider": {
-              "@id": "https://dezignloop.com/#organization"
+              "@id": "https://www.dezignloop.com/#organization"
             }
           }
         }

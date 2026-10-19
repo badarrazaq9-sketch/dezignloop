@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   description: 'Small business website mistakes are silently costing you customers. The 10 warning signs — slow speed, no mobile design, weak CTAs — and how to fix each.',
   keywords: ['small business website mistakes'],
   alternates: {
-    canonical: 'https://dezignloop.com/blog/signs-website-losing-customers',
+    canonical: 'https://www.dezignloop.com/blog/signs-website-losing-customers',
   },
   openGraph: {
     title: '10 Signs Your Small Business Website Is Losing Customers',
     description: 'Small business website mistakes are silently costing you customers. The 10 warning signs — slow speed, no mobile design, weak CTAs — and how to fix each.',
-    url: 'https://dezignloop.com/blog/signs-website-losing-customers',
+    url: 'https://www.dezignloop.com/blog/signs-website-losing-customers',
     siteName: 'DezignLoop',
     type: 'article',
     publishedTime: '2026-10-19T12:00:00-04:00',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     ],
     images: [
       {
-        url: 'https://dezignloop.com/icon-512x512.png',
+        url: 'https://www.dezignloop.com/icon-512x512.png',
         width: 512,
         height: 512,
         alt: 'DezignLoop',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '10 Signs Your Small Business Website Is Losing Customers',
     description: 'Small business website mistakes are silently costing you customers. The 10 warning signs — slow speed, no mobile design, weak CTAs — and how to fix each.',
-    images: ['https://dezignloop.com/icon-512x512.png'],
+    images: ['https://www.dezignloop.com/icon-512x512.png'],
   },
 };
 
@@ -46,24 +46,24 @@ const articleSchema = {
   "@type": "BlogPosting",
   "headline": "10 Signs Your Small Business Website Is Losing Customers",
   "description": "Small business website mistakes are silently costing you customers. The 10 warning signs \u2014 slow speed, no mobile design, weak CTAs \u2014 and how to fix each.",
-  "url": "https://dezignloop.com/blog/signs-website-losing-customers",
-  "image": "https://dezignloop.com/icon-512x512.png",
+  "url": "https://www.dezignloop.com/blog/signs-website-losing-customers",
+  "image": "https://www.dezignloop.com/icon-512x512.png",
   "articleSection": "Guides",
   "datePublished": "2026-10-19",
   "dateModified": "2026-10-19",
   "author": {
     "@type": "Organization",
     "name": "DezignLoop",
-    "url": "https://dezignloop.com/"
+    "url": "https://www.dezignloop.com/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "DezignLoop",
-    "url": "https://dezignloop.com/"
+    "url": "https://www.dezignloop.com/"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://dezignloop.com/blog/signs-website-losing-customers"
+    "@id": "https://www.dezignloop.com/blog/signs-website-losing-customers"
   }
 };
 

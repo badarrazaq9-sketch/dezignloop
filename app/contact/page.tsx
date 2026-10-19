@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description:
     'Ready to grow? Contact our team for a free consultation on web design, branding, SEO, apps or marketing. Email: support@dezignloop.com | Call: +1 (843) 410-9324. Fast response.',
   alternates: {
-    canonical: 'https://dezignloop.com/contact',
+    canonical: 'https://www.dezignloop.com/contact',
   },
   openGraph: {
     title: 'Contact Us – DezignLoop',
     description: 'Free consultation for small business digital growth. Reach out today!',
-    url: 'https://dezignloop.com/contact',
+    url: 'https://www.dezignloop.com/contact',
     images: [
       {
         url: '/og-contact.jpg',
@@ -31,14 +31,14 @@ const contactSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/contact/#webpage",
-      "url": "https://dezignloop.com/contact",
+      "@id": "https://www.dezignloop.com/contact/#webpage",
+      "url": "https://www.dezignloop.com/contact",
       "name": "Contact DezignLoop – Free Consultation for Small Businesses",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Ready to grow? Contact our team for a free consultation on web design, branding, SEO, apps or marketing. Fast response.",
       "breadcrumb": {
@@ -48,13 +48,13 @@ const contactSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Contact",
-            "item": "https://dezignloop.com/contact"
+            "item": "https://www.dezignloop.com/contact"
           }
         ]
       }
@@ -62,9 +62,9 @@ const contactSchema = {
     {
       "@type": "ContactPage",
       "name": "Contact DezignLoop",
-      "url": "https://dezignloop.com/contact",
+      "url": "https://www.dezignloop.com/contact",
       "mainEntity": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "contactPoint": {
         "@type": "ContactPoint",
