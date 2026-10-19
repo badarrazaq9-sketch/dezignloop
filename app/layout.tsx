@@ -23,18 +23,18 @@ export const viewport: Viewport = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://dezignloop.com/#website",
-  "url": "https://dezignloop.com",
+  "@id": "https://www.dezignloop.com/#website",
+  "url": "https://www.dezignloop.com",
   "name": "DezignLoop",
   "publisher": {
-    "@id": "https://dezignloop.com/#organization"
+    "@id": "https://www.dezignloop.com/#organization"
   },
   "inLanguage": "en-US",
   "potentialAction": {
     "@type": "SearchAction",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://dezignloop.com/?s={search_term_string}"
+      "urlTemplate": "https://www.dezignloop.com/?s={search_term_string}"
     },
     "query-input": "required name=search_term_string"
   }
@@ -43,12 +43,12 @@ const websiteSchema = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": ["Organization", "LocalBusiness"],
-  "@id": "https://dezignloop.com/#organization",
+  "@id": "https://www.dezignloop.com/#organization",
   "name": "DezignLoop",
-  "url": "https://dezignloop.com",
+  "url": "https://www.dezignloop.com",
   "logo": {
     "@type": "ImageObject",
-    "url": "https://dezignloop.com/assets/logo.png",
+    "url": "https://www.dezignloop.com/assets/logo.png",
     "width": 512,
     "height": 512
   },
@@ -221,7 +221,7 @@ keywords: [
   'small business growth USA',
   'online presence USA',
 ].join(', '),
-  metadataBase: new URL('https://dezignloop.com'),
+  metadataBase: new URL('https://www.dezignloop.com'),
   robots: {
     index: true,
     follow: true,
@@ -234,9 +234,9 @@ keywords: [
     },
   },
   alternates: {
-    canonical: 'https://dezignloop.com',
+    canonical: 'https://www.dezignloop.com',
     languages: {
-      'en-US': 'https://dezignloop.com',
+      'en-US': 'https://www.dezignloop.com',
     },
   },
   openGraph: {
@@ -244,7 +244,7 @@ keywords: [
     title: 'DezignLoop – Websites & Growth for Small Businesses',
     description:
       'Professional web design, branding, SEO and mobile apps built for small businesses. Fast, affordable, results-driven. US-based team.',
-    url: 'https://dezignloop.com',
+    url: 'https://www.dezignloop.com',
     siteName: 'DezignLoop',
     images: [
       {
