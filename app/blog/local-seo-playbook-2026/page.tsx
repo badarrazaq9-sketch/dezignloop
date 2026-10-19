@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   description: 'Local SEO for small businesses: the 2026 playbook. Google Business Profile, reviews, local keywords & citations — the exact steps that win nearby customers.',
   keywords: ['local SEO for small businesses'],
   alternates: {
-    canonical: 'https://dezignloop.com/blog/local-seo-playbook-2026',
+    canonical: 'https://www.dezignloop.com/blog/local-seo-playbook-2026',
   },
   openGraph: {
     title: 'Local SEO for Small Businesses: The 2026 Playbook',
     description: 'Local SEO for small businesses: the 2026 playbook. Google Business Profile, reviews, local keywords & citations — the exact steps that win nearby customers.',
-    url: 'https://dezignloop.com/blog/local-seo-playbook-2026',
+    url: 'https://www.dezignloop.com/blog/local-seo-playbook-2026',
     siteName: 'DezignLoop',
     type: 'article',
     publishedTime: '2026-10-19T12:00:00-04:00',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     ],
     images: [
       {
-        url: 'https://dezignloop.com/icon-512x512.png',
+        url: 'https://www.dezignloop.com/icon-512x512.png',
         width: 512,
         height: 512,
         alt: 'DezignLoop',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Local SEO for Small Businesses: The 2026 Playbook',
     description: 'Local SEO for small businesses: the 2026 playbook. Google Business Profile, reviews, local keywords & citations — the exact steps that win nearby customers.',
-    images: ['https://dezignloop.com/icon-512x512.png'],
+    images: ['https://www.dezignloop.com/icon-512x512.png'],
   },
 };
 
@@ -46,24 +46,24 @@ const articleSchema = {
   "@type": "BlogPosting",
   "headline": "Local SEO for Small Businesses: The 2026 Playbook",
   "description": "Local SEO for small businesses: the 2026 playbook. Google Business Profile, reviews, local keywords & citations \u2014 the exact steps that win nearby customers.",
-  "url": "https://dezignloop.com/blog/local-seo-playbook-2026",
-  "image": "https://dezignloop.com/icon-512x512.png",
+  "url": "https://www.dezignloop.com/blog/local-seo-playbook-2026",
+  "image": "https://www.dezignloop.com/icon-512x512.png",
   "articleSection": "Guides",
   "datePublished": "2026-10-19",
   "dateModified": "2026-10-19",
   "author": {
     "@type": "Organization",
     "name": "DezignLoop",
-    "url": "https://dezignloop.com/"
+    "url": "https://www.dezignloop.com/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "DezignLoop",
-    "url": "https://dezignloop.com/"
+    "url": "https://www.dezignloop.com/"
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://dezignloop.com/blog/local-seo-playbook-2026"
+    "@id": "https://www.dezignloop.com/blog/local-seo-playbook-2026"
   }
 };
 
