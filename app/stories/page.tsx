@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   description:
     'See how DezignLoop helped small businesses grow with custom websites, branding, SEO, and digital marketing. Real results, real success stories.',
   alternates: {
-    canonical: 'https://dezignloop.com/stories',
+    canonical: 'https://www.dezignloop.com/stories',
   },
   openGraph: {
     title: 'Client Success Stories – DezignLoop',
     description: 'Real results for small businesses: websites, branding, SEO, and marketing that drive growth.',
-    url: 'https://dezignloop.com/stories',
+    url: 'https://www.dezignloop.com/stories',
     images: [
       {
         url: '/og-stories.jpg',
@@ -30,14 +30,14 @@ const storiesSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/stories/#webpage",
-      "url": "https://dezignloop.com/stories",
+      "@id": "https://www.dezignloop.com/stories/#webpage",
+      "url": "https://www.dezignloop.com/stories",
       "name": "Success Stories & Case Studies – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "See how DezignLoop helped small businesses grow with custom websites, branding, SEO, and digital marketing.",
       "breadcrumb": {
@@ -47,13 +47,13 @@ const storiesSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Success Stories",
-            "item": "https://dezignloop.com/stories"
+            "item": "https://www.dezignloop.com/stories"
           }
         ]
       }
