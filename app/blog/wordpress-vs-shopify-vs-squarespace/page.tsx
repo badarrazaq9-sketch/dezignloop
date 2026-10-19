@@ -6,16 +6,38 @@ import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'WordPress vs Shopify vs Squarespace for Small Business',
-  description: 'WordPress vs Shopify vs Squarespace compared for small business owners: costs, ease of use, e-commerce, and SEO — plus when to pick each one.',
+  description: 'WordPress vs Shopify vs Squarespace: which is best for your small business? Honest 2026 comparison of costs, ease of use, e-commerce power & SEO.',
   keywords: ['wordpress vs shopify vs squarespace'],
   alternates: {
     canonical: 'https://dezignloop.com/blog/wordpress-vs-shopify-vs-squarespace',
   },
   openGraph: {
     title: 'WordPress vs Shopify vs Squarespace for Small Business',
-    description: 'WordPress vs Shopify vs Squarespace compared for small business owners: costs, ease of use, e-commerce, and SEO — plus when to pick each one.',
+    description: 'WordPress vs Shopify vs Squarespace: which is best for your small business? Honest 2026 comparison of costs, ease of use, e-commerce power & SEO.',
     url: 'https://dezignloop.com/blog/wordpress-vs-shopify-vs-squarespace',
+    siteName: 'DezignLoop',
     type: 'article',
+    publishedTime: '2026-10-19T12:00:00-04:00',
+    section: 'Guides',
+    tags: [
+    'wordpress vs shopify',
+    'squarespace',
+    'website platform'
+    ],
+    images: [
+      {
+        url: 'https://dezignloop.com/icon-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'DezignLoop',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'WordPress vs Shopify vs Squarespace for Small Business',
+    description: 'WordPress vs Shopify vs Squarespace: which is best for your small business? Honest 2026 comparison of costs, ease of use, e-commerce power & SEO.',
+    images: ['https://dezignloop.com/icon-512x512.png'],
   },
 };
 
@@ -23,8 +45,10 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "WordPress vs Shopify vs Squarespace for Small Business",
-  "description": "WordPress vs Shopify vs Squarespace compared for small business owners: costs, ease of use, e-commerce, and SEO \u2014 plus when to pick each one.",
+  "description": "WordPress vs Shopify vs Squarespace: which is best for your small business? Honest 2026 comparison of costs, ease of use, e-commerce power & SEO.",
   "url": "https://dezignloop.com/blog/wordpress-vs-shopify-vs-squarespace",
+  "image": "https://dezignloop.com/icon-512x512.png",
+  "articleSection": "Guides",
   "datePublished": "2026-10-19",
   "dateModified": "2026-10-19",
   "author": {
