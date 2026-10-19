@@ -183,9 +183,9 @@ export default function ServicesSection() {
             <span className="text-primary font-black uppercase tracking-[0.2em] text-xs mb-4 block">
               Our Expertise
             </span>
-            <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-slate-900 dark:text-white">
+            <h1 className="text-4xl md:text-5xl font-black tracking-tighter text-slate-900 dark:text-white">
               Full-Stack Digital Services
-            </h2>
+            </h1>
             <p className="text-slate-600 dark:text-slate-400 text-lg mt-6 max-w-2xl mx-auto">
               From web design to app development and marketing, we provide end-to-end digital services designed to grow your business.
             </p>
