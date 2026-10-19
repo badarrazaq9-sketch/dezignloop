@@ -5,18 +5,34 @@ import Footer from "@/components/Footer";
 import { ArrowRight, BookOpen } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Blog – Small Business Website, SEO & Marketing Guides | DezignLoop',
+  title: 'Blog \u2013 Small Business Website, SEO & Marketing Guides | DezignLoop',
   description:
     'Practical guides for US small businesses: website costs, platform comparisons, website mistakes to fix, and local SEO that wins customers.',
   alternates: {
     canonical: 'https://dezignloop.com/blog',
   },
   openGraph: {
-    title: 'DezignLoop Blog – Small Business Guides',
+    title: 'DezignLoop Blog \u2013 Small Business Guides',
     description:
       'Practical guides for US small businesses: website costs, platform comparisons, and local SEO.',
     url: 'https://dezignloop.com/blog',
+    siteName: 'DezignLoop',
     type: 'website',
+    images: [
+      {
+        url: 'https://dezignloop.com/icon-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'DezignLoop',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'DezignLoop Blog \u2013 Small Business Guides',
+    description:
+      'Practical guides for US small businesses: website costs, platform comparisons, and local SEO.',
+    images: ['https://dezignloop.com/icon-512x512.png'],
   },
 };
 
