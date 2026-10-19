@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description:
     'Professional brand identity, logos, color palettes and visual strategy that help small businesses stand out, build trust and communicate clearly. Fast & affordable.',
   alternates: {
-    canonical: 'https://dezignloop.com/services/branding',
+    canonical: 'https://www.dezignloop.com/services/branding',
   },
   openGraph: {
     title: 'Branding & Logo Design – DezignLoop',
     description: 'Professional brand identity and logo design services for small businesses.',
-    url: 'https://dezignloop.com/services/branding',
+    url: 'https://www.dezignloop.com/services/branding',
     images: [
       {
         url: '/og-branding.jpg',
@@ -31,14 +31,14 @@ const brandingSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/services/branding/#webpage",
-      "url": "https://dezignloop.com/services/branding",
+      "@id": "https://www.dezignloop.com/services/branding/#webpage",
+      "url": "https://www.dezignloop.com/services/branding",
       "name": "Branding & Logo Design for Small Businesses – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Professional brand identity, logos, color palettes and visual strategy that help small businesses stand out, build trust and communicate clearly.",
       "breadcrumb": {
@@ -48,19 +48,19 @@ const brandingSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://dezignloop.com/services"
+            "item": "https://www.dezignloop.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Branding & Logo Design",
-            "item": "https://dezignloop.com/services/branding"
+            "item": "https://www.dezignloop.com/services/branding"
           }
         ]
       }
@@ -69,7 +69,7 @@ const brandingSchema = {
       "@type": "Service",
       "serviceType": "Branding & Logo Design",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",
