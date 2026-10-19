@@ -84,7 +84,7 @@ export default function BlogIndex() {
                   href="/blog/how-much-does-a-website-cost-small-business-2026"
                   className="inline-flex items-center gap-2 font-black text-slate-900 dark:text-white hover:text-primary transition-colors w-fit"
                 >
-                  Read Article <ArrowRight size=20 />
+                  Read Article <ArrowRight size={20} />
                 </Link>
               </div>
             </div>
@@ -114,7 +114,7 @@ export default function BlogIndex() {
                   href="/blog/wordpress-vs-shopify-vs-squarespace"
                   className="inline-flex items-center gap-2 font-black text-slate-900 dark:text-white hover:text-primary transition-colors w-fit"
                 >
-                  Read Article <ArrowRight size=20 />
+                  Read Article <ArrowRight size={20} />
                 </Link>
               </div>
             </div>
@@ -144,7 +144,7 @@ export default function BlogIndex() {
                   href="/blog/signs-website-losing-customers"
                   className="inline-flex items-center gap-2 font-black text-slate-900 dark:text-white hover:text-primary transition-colors w-fit"
                 >
-                  Read Article <ArrowRight size=20 />
+                  Read Article <ArrowRight size={20} />
                 </Link>
               </div>
             </div>
@@ -174,7 +174,7 @@ export default function BlogIndex() {
                   href="/blog/local-seo-playbook-2026"
                   className="inline-flex items-center gap-2 font-black text-slate-900 dark:text-white hover:text-primary transition-colors w-fit"
                 >
-                  Read Article <ArrowRight size=20 />
+                  Read Article <ArrowRight size={20} />
                 </Link>
               </div>
             </div>
