@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description:
     'Professional 3D logo design services for small businesses and brands. Stunning three-dimensional logos that stand out on digital platforms, packaging, and marketing materials. USA-based design team.',
   alternates: {
-    canonical: 'https://dezignloop.com/threed-logo',
+    canonical: 'https://www.dezignloop.com/threed-logo',
   },
   openGraph: {
     title: '3D Logo Design – DezignLoop',
     description: 'Stunning 3D logos that make your brand pop. Professional three-dimensional logo design for digital and print.',
-    url: 'https://dezignloop.com/threed-logo',
+    url: 'https://www.dezignloop.com/threed-logo',
     images: [
       {
         url: '/og-3d-logo.jpg',
@@ -28,14 +28,14 @@ const threeDLogoSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/threed-logo/#webpage",
-      "url": "https://dezignloop.com/threed-logo",
+      "@id": "https://www.dezignloop.com/threed-logo/#webpage",
+      "url": "https://www.dezignloop.com/threed-logo",
       "name": "3D Logo Design Services – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Professional 3D logo design services for small businesses and brands. Stunning three-dimensional logos that stand out on digital platforms, packaging, and marketing materials.",
       "breadcrumb": {
@@ -45,19 +45,19 @@ const threeDLogoSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://dezignloop.com/services"
+            "item": "https://www.dezignloop.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "3D Logo Design",
-            "item": "https://dezignloop.com/threed-logo"
+            "item": "https://www.dezignloop.com/threed-logo"
           }
         ]
       }
@@ -66,7 +66,7 @@ const threeDLogoSchema = {
       "@type": "Service",
       "serviceType": "3D Logo Design",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",
