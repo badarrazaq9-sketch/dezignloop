@@ -87,6 +87,7 @@ export default function Navbar() {
           <Link href="/portfolio" className="hover:text-primary transition-colors">Portfolio</Link>
           <Link href="/pricing" className="hover:text-primary transition-colors">Pricing</Link>
           <Link href="/stories" className="hover:text-primary transition-colors">Stories</Link>
+          <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
           <Link href="/contact" className="hover:text-primary transition-colors">Contact</Link>
           <Link href="/about-us" className="hover:text-primary transition-colors">About Us</Link>
         </div>
@@ -128,6 +129,7 @@ export default function Navbar() {
             <Link href="/portfolio" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary">Portfolio</Link>
             <Link href="/pricing" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary">Pricing</Link>
             <Link href="/stories" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary">Stories</Link>
+            <Link href="/blog" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary">Blog</Link>
             <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary">Contact</Link>
           
 
