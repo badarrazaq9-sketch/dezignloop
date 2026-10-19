@@ -6,16 +6,38 @@ import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Local SEO for Small Businesses: The 2026 Playbook',
-  description: 'The 2026 local SEO playbook for small businesses: Google Business Profile, reviews, local keywords, and citations that actually win customers.',
+  description: 'Local SEO for small businesses: the 2026 playbook. Google Business Profile, reviews, local keywords & citations — the exact steps that win nearby customers.',
   keywords: ['local SEO for small businesses'],
   alternates: {
     canonical: 'https://dezignloop.com/blog/local-seo-playbook-2026',
   },
   openGraph: {
     title: 'Local SEO for Small Businesses: The 2026 Playbook',
-    description: 'The 2026 local SEO playbook for small businesses: Google Business Profile, reviews, local keywords, and citations that actually win customers.',
+    description: 'Local SEO for small businesses: the 2026 playbook. Google Business Profile, reviews, local keywords & citations — the exact steps that win nearby customers.',
     url: 'https://dezignloop.com/blog/local-seo-playbook-2026',
+    siteName: 'DezignLoop',
     type: 'article',
+    publishedTime: '2026-10-19T12:00:00-04:00',
+    section: 'Guides',
+    tags: [
+    'local seo',
+    'google business profile',
+    'small business'
+    ],
+    images: [
+      {
+        url: 'https://dezignloop.com/icon-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'DezignLoop',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Local SEO for Small Businesses: The 2026 Playbook',
+    description: 'Local SEO for small businesses: the 2026 playbook. Google Business Profile, reviews, local keywords & citations — the exact steps that win nearby customers.',
+    images: ['https://dezignloop.com/icon-512x512.png'],
   },
 };
 
@@ -23,8 +45,10 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Local SEO for Small Businesses: The 2026 Playbook",
-  "description": "The 2026 local SEO playbook for small businesses: Google Business Profile, reviews, local keywords, and citations that actually win customers.",
+  "description": "Local SEO for small businesses: the 2026 playbook. Google Business Profile, reviews, local keywords & citations \u2014 the exact steps that win nearby customers.",
   "url": "https://dezignloop.com/blog/local-seo-playbook-2026",
+  "image": "https://dezignloop.com/icon-512x512.png",
+  "articleSection": "Guides",
   "datePublished": "2026-10-19",
   "dateModified": "2026-10-19",
   "author": {
