@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description:
     'Custom iOS & Android apps for bookings, orders, loyalty programs & customer engagement. User-friendly, scalable, built for small business budgets and growth.',
   alternates: {
-    canonical: 'https://dezignloop.com/services/mobile-app-development',
+    canonical: 'https://www.dezignloop.com/services/mobile-app-development',
   },
   openGraph: {
     title: 'Mobile App Development – DezignLoop',
     description: 'Custom iOS & Android apps for bookings, orders, loyalty programs & customer engagement.',
-    url: 'https://dezignloop.com/services/mobile-app-development',
+    url: 'https://www.dezignloop.com/services/mobile-app-development',
     images: [
       {
         url: '/og-mobile-app-development.jpg',
@@ -32,14 +32,14 @@ const appDevSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/services/mobile-app-development/#webpage",
-      "url": "https://dezignloop.com/services/mobile-app-development",
+      "@id": "https://www.dezignloop.com/services/mobile-app-development/#webpage",
+      "url": "https://www.dezignloop.com/services/mobile-app-development",
       "name": "Mobile App Development for Small Businesses – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Custom iOS & Android apps for bookings, orders, loyalty programs & customer engagement. User-friendly, scalable, built for small business budgets and growth.",
       "breadcrumb": {
@@ -49,19 +49,19 @@ const appDevSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://dezignloop.com/services"
+            "item": "https://www.dezignloop.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "Mobile App Development",
-            "item": "https://dezignloop.com/services/mobile-app-development"
+            "item": "https://www.dezignloop.com/services/mobile-app-development"
           }
         ]
       }
@@ -70,7 +70,7 @@ const appDevSchema = {
       "@type": "Service",
       "serviceType": "Mobile App Development",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",
