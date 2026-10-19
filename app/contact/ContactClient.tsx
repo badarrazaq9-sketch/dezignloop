@@ -23,6 +23,7 @@ const ContactPage = () => {
           <SectionHeader
             tag="Contact Us"
             title="Get Your Free Website Consultation"
+            level="h1"
             description="Tell us about your business. We'll show you exactly how to get more customers online."
             center={true}
           />
