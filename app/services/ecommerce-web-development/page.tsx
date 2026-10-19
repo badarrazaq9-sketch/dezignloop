@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   description:
     'Custom online stores that scale and sell. Seamless shopping experience, secure payments, mobile-optimized. Built for retailers and online shops of all sizes.',
   alternates: {
-    canonical: 'https://dezignloop.com/services/ecommerce-web-development',
+    canonical: 'https://www.dezignloop.com/services/ecommerce-web-development',
   },
   openGraph: {
     title: 'E-commerce Development – DezignLoop',
     description: 'Custom online stores with seamless shopping, secure payments, and mobile optimization.',
-    url: 'https://dezignloop.com/services/ecommerce-web-development',
+    url: 'https://www.dezignloop.com/services/ecommerce-web-development',
     images: [
       {
         url: '/og-ecommerce.jpg',
@@ -32,14 +32,14 @@ const ecommerceSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://dezignloop.com/services/ecommerce-web-development/#webpage",
-      "url": "https://dezignloop.com/services/ecommerce-web-development",
+      "@id": "https://www.dezignloop.com/services/ecommerce-web-development/#webpage",
+      "url": "https://www.dezignloop.com/services/ecommerce-web-development",
       "name": "E-commerce Development for Small Businesses – DezignLoop",
       "isPartOf": {
-        "@id": "https://dezignloop.com/#website"
+        "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "description": "Custom online stores that scale and sell. Seamless shopping experience, secure payments, mobile-optimized. Built for retailers and online shops of all sizes.",
       "breadcrumb": {
@@ -49,19 +49,19 @@ const ecommerceSchema = {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://dezignloop.com/"
+            "item": "https://www.dezignloop.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Services",
-            "item": "https://dezignloop.com/services"
+            "item": "https://www.dezignloop.com/services"
           },
           {
             "@type": "ListItem",
             "position": 3,
             "name": "E-commerce Development",
-            "item": "https://dezignloop.com/services/ecommerce-web-development"
+            "item": "https://www.dezignloop.com/services/ecommerce-web-development"
           }
         ]
       }
@@ -70,7 +70,7 @@ const ecommerceSchema = {
       "@type": "Service",
       "serviceType": "E-commerce Development",
       "provider": {
-        "@id": "https://dezignloop.com/#organization"
+        "@id": "https://www.dezignloop.com/#organization"
       },
       "areaServed": {
         "@type": "Country",
