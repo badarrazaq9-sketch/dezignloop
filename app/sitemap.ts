@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://dezignloop.com';  // ← Fixed: was pointing at vercel.app staging
+  const baseUrl = 'https://www.dezignloop.com';  // ← Fixed: was pointing at vercel.app staging
 
   const routes = [
     '',
