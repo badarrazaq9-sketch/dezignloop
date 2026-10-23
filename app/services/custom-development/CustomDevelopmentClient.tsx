@@ -16,7 +16,12 @@ import {
   Globe,
   Clock,
   X,
-  Smartphone
+  Code2,
+  Settings,
+  Users,
+  BarChart3,
+  Plug,
+  Zap
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '@/components/Navbar';
@@ -43,239 +48,232 @@ type ProofItem = {
 
 const proofItems: ProofItem[] = [
   {
-    title: 'Local Service Booking App',
-    category: 'iOS & Android Mobile App',
-    image: 'https://images.unsplash.com/photo-1516321310765-6d6b9d0b0b0e?auto=format&fit=crop&w=800&q=80',
-    fullImage: 'https://images.unsplash.com/photo-1516321310765-6d6b9d0b0b0e?auto=format&fit=crop&w=1600&q=80',
+    title: 'Job Management System for a Service Company',
+    category: 'Operations Dashboard & Staff Portal',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+    fullImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80',
   },
   {
-    title: 'Restaurant Ordering App',
-    category: 'Food Delivery & Pickup',
-    image: 'https://images.unsplash.com/photo-1517248135467-2c7ed3ab7229?auto=format&fit=crop&w=800&q=80',
-    fullImage: 'https://images.unsplash.com/photo-1517248135467-2c7ed3ab7229?auto=format&fit=crop&w=1600&q=80',
+    title: 'Custom CRM & Reporting Platform',
+    category: 'Sales Pipeline & Business Reporting',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+    fullImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=80',
   },
   {
-    title: 'E-commerce Shopping App',
-    category: 'Product Catalog & Cart',
-    image: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=800&q=80',
-    fullImage: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?auto=format&fit=crop&w=1600&q=80',
+    title: 'Client Portal with Payments & Documents',
+    category: 'Customer Portal & API Integrations',
+    image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
+    fullImage: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80',
+  },
+];
+
+const buildItems = [
+  {
+    icon: Settings,
+    title: 'Business Software & Internal Tools',
+    desc: 'Job tracking, order management, inventory, scheduling and operations tools built around the exact way your team works — not the way a generic platform thinks you should.',
+  },
+  {
+    icon: Users,
+    title: 'CRM & Customer Management',
+    desc: 'Your own CRM with the pipeline stages, fields and follow-ups your business actually uses. No per-seat fees, no features you will never touch, nothing important missing.',
+  },
+  {
+    icon: BarChart3,
+    title: 'Dashboards & Reporting',
+    desc: 'One live view of sales, jobs, revenue and team performance. Stop exporting spreadsheets every Friday — the numbers you need, always current, on any device.',
+  },
+  {
+    icon: Globe,
+    title: 'Customer & Client Portals',
+    desc: 'Secure portals where your customers can log in, track orders or projects, sign documents, pay invoices and message you — without another phone call or email chain.',
+  },
+  {
+    icon: Plug,
+    title: 'API Integrations',
+    desc: 'Connect the tools you already run on: Stripe, QuickBooks, Google, shipping carriers, your CRM, your website. Data flows between systems automatically, entered once.',
+  },
+  {
+    icon: Zap,
+    title: 'Workflow Automation',
+    desc: 'Automatic quotes, invoices, reminders, follow-ups and notifications. The repetitive admin your team does every day, handled by the software instead.',
   },
 ];
 
 const service = {
-  title: 'App Development',
-  tagline: 'Custom Mobile Apps That Bring Customers to You',
-  heroHeadline: 'Your Business, On Their Phones',
-  heroSubhead: 'We build fast, reliable mobile apps for iOS and Android that help local businesses take bookings, sell products, manage orders and connect directly with customers – without complicated tech headaches.',
-  trustCopy: 'Built 80+ Mobile Apps for Local & Small Businesses',
-  icon: Smartphone,
-  heroImage: 'https://images.unsplash.com/photo-1516321310765-6d6b9d0b0b0e?auto=format&fit=crop&w=1200&q=80',
+  title: 'Custom Development',
+  tagline: 'Software Built Around How Your Business Actually Works',
+  heroHeadline: 'Software Built Around Your Business',
+  heroSubhead: 'Off-the-shelf tools force your team into workarounds, spreadsheets and double data entry. We design and build custom software — web applications, dashboards, portals and automations — that fits your exact process, connects the tools you already use, and gives you back hours every week.',
+  trustCopy: 'Fixed Quotes, Weekly Demos & 100% Code Ownership',
+  icon: Code2,
+  heroImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80',
 
   whoFor: [
-    'Local service businesses wanting online bookings & appointments',
-    'Restaurants, cafes and food businesses needing order apps',
-    'Small shops & stores ready to sell products on mobile',
-    'Owners tired of relying only on phone calls or walk-ins',
+    'Businesses running operations on spreadsheets, paper or sticky notes',
+    'Teams paying for software that still forces manual workarounds',
+    'Owners who need their tools to talk to each other (payments, accounting, CRM)',
+    'Companies with a proven process they want to turn into their own platform or SaaS',
   ],
 
   whoNotFor: [
-    'Businesses expecting a full app for $500',
-    'Companies not ready to maintain or update the app later',
-    'Owners wanting complex enterprise-level features on a small budget',
-    'Businesses without clear idea of what the app should do',
+    'Businesses a simple off-the-shelf tool would serve perfectly well',
+    'Owners expecting complex custom software for a few hundred dollars',
+    'Companies that cannot spare an hour a week for feedback during the build',
+    'Projects with no clear problem to solve yet — start with a consultation first',
   ],
 
   problems: [
     {
-      problem: 'Customers keep asking for online booking or ordering',
-      solution: 'A simple app lets them book or order anytime, reducing phone time.',
+      problem: 'Your team lives in spreadsheets and re-types the same data into three different tools',
+      solution: 'One custom system where data is entered once and flows everywhere it needs to go — no more copy-paste between apps.',
     },
     {
-      problem: 'You lose sales because you have no mobile presence',
-      solution: 'Your own branded app makes you look modern and trustworthy.',
+      problem: 'Off-the-shelf software almost fits, but the missing 20% costs you hours every week',
+      solution: 'Software designed around your exact process, with the fields, steps and reports your business actually runs on.',
     },
     {
-      problem: 'Existing solutions are too expensive or complicated',
-      solution: 'Custom app built exactly for your business at fair price.',
+      problem: 'You have no single view of jobs, sales and money — so decisions wait for someone to build a report',
+      solution: 'A live dashboard that pulls everything together, so you see the state of the business in seconds, not at month-end.',
     },
   ],
 
   deliverables: [
-    'Native iOS and/or Android app',
-    'Clean & user-friendly UI/UX design',
-    'Core features implemented (booking, cart, payments, etc.)',
-    'App Store & Google Play submission support',
-    'Source code & full ownership',
+    'Discovery & requirements blueprint',
+    'UX/UI design your team will find easy to use',
+    'Custom web application built to your spec',
+    'Database design & secure data storage',
+    'Admin dashboard & role-based user accounts',
+    'Third-party API integrations',
+    'Automated workflows & email notifications',
+    'Testing, QA & deployment on cloud hosting',
+    'Staff training & plain-English documentation',
+    'Full source code & 100% ownership',
     '30 days post-launch bug fixes & support',
   ],
 
-  timeline: '2–16 Weeks (depending on package)',
-  communication: 'WhatsApp, Email & Weekly Progress Updates',
+  timeline: '6–16 Weeks (depending on scope)',
+  communication: 'WhatsApp, Email & Weekly Demo Updates',
 
   metrics: [
-    { value: '70–90%', label: 'Clients See More Bookings/Orders' },
-    { value: '2–8', label: 'Weeks to First Launch (Basic)' },
-    { value: '100%', label: 'You Own the App & Code' },
+    { value: '100%', label: 'You Own the Software, Code & Data' },
+    { value: '4–10', label: 'Weeks to a Working First Version' },
+    { value: '30+', label: 'Admin Hours a Month Saved (Typical)' },
   ],
 
   packages: [
     {
-      name: 'Basic Package',
-      description: 'Perfect for starting with a simple, single-platform app.',
-      price: '$999',
-      popular: false,
-      features: [
-        'Development for a single platform (iOS or Android)',
-        'Basic UI/UX design',
-        'Up to 5 unique app screens',
-        'Standard features implementation',
-        '2-week development timeline',
-        '1 round of revisions',
-        'Ownership rights',
-        'Satisfaction guarantee',
-        'Free delivery of final app files',
-        'Supported formats: APK (Android) or IPA (iOS)',
-      ],
-    },
-    {
-      name: 'Standard Package',
-      description: 'Best choice for most local businesses – both platforms.',
-      price: '$1999',
-      popular: true,
-      features: [
-        'Development for both iOS and Android platforms',
-        'Enhanced UI/UX design',
-        'Up to 10 unique app screens',
-        'Advanced features implementation',
-        '4-week development timeline',
-        '2 rounds of revisions',
-        'Ownership rights',
-        'Satisfaction guarantee',
-        'Free delivery of final app files',
-        'Supported formats: APK (Android) and IPA (iOS)',
-      ],
-    },
-    {
-      name: 'Premium Package',
-      description: 'High-end custom app with unlimited flexibility.',
-      price: '$4999',
-      popular: false,
-      features: [
-        'Development for both iOS and Android platforms',
-        'Custom UI/UX design',
-        'Unlimited app screens',
-        'Advanced features implementation with API integration',
-        '8-week development timeline',
-        'Unlimited rounds of revisions',
-        'Priority support',
-        'Ownership rights',
-        'Satisfaction guarantee',
-        'Free delivery of final app files',
-        'Supported formats: APK (Android) and IPA (iOS)',
-      ],
-    },
-    {
-      name: 'Starter E-Commerce Package',
-      description: 'Great entry for small shops wanting to sell online.',
+      name: 'Starter System',
+      description: 'Replace spreadsheets and manual processes with one simple custom tool.',
       price: '$2999',
       popular: false,
       features: [
-        'Development for a single platform (iOS or Android)',
-        'Basic UI/UX design optimized for e-commerce functionalities',
-        'Integration with popular payment gateways (e.g., PayPal, Stripe)',
-        'Limited product catalog (up to 100 products)',
-        'Standard features implementation (e.g., product search, cart management)',
-        '8-week development timeline',
-        '2 rounds of revisions',
-        'Ownership rights',
-        'Satisfaction guarantee',
-        'Free delivery of final app files',
-        'Supported formats: APK (Android) or IPA (iOS)',
+        'Discovery & requirements blueprint',
+        'One custom web application or internal tool',
+        'Up to 5 core modules (jobs, customers, orders, etc.)',
+        'User logins with 2 roles (admin & staff)',
+        'Database design & setup',
+        'Mobile-friendly, responsive interface',
+        'Basic reporting & CSV exports',
+        'Automated email notifications',
+        'Deployment & hosting setup',
+        'Typical timeline: 6–8 weeks',
+        'Staff training session',
+        'Full source code & ownership',
+        '30 days post-launch support',
       ],
     },
     {
-      name: 'Business E-Commerce Package',
-      description: 'Ideal for growing stores with more products and features.',
-      price: '$7999',
-      popular: false,
+      name: 'Business Platform',
+      description: 'A connected system for growing teams — portal, integrations and automation included.',
+      price: '$5999',
+      popular: true,
       features: [
-        'Development for both iOS and Android platforms',
-        'Custom UI/UX design tailored to your brand and target audience',
-        'Integration with advanced payment gateways and inventory management systems',
-        'Expanded product catalog (up to 500 products)',
-        'Enhanced features implementation (e.g., personalized recommendations, wishlist)',
-        '12-week development timeline',
-        '3 rounds of revisions',
-        'Priority support',
-        'Ownership rights',
-        'Satisfaction guarantee',
-        'Free delivery of final app files',
-        'Supported formats: APK (Android) and IPA (iOS)',
+        'Everything in Starter System',
+        'Up to 12 modules & screens',
+        'Advanced roles & permissions',
+        'Customer or client portal',
+        '2 third-party integrations (payments, accounting, CRM…)',
+        'Automated workflows & reminders',
+        'Custom dashboards & reports',
+        'Data migration from spreadsheets or old tools',
+        'Typical timeline: 8–12 weeks',
+        '2 staff training sessions',
+        'Full source code & ownership',
+        '60 days post-launch support',
       ],
     },
     {
-      name: 'Enterprise E-Commerce Package',
-      description: 'Full-featured app for serious online sellers.',
-      price: '$15999',
+      name: 'Advanced / SaaS Platform',
+      description: 'Full platforms and SaaS products built to scale with your business.',
+      price: '$9999',
       popular: false,
       features: [
-        'Development for both iOS and Android platforms',
-        'Premium UI/UX design with advanced interactive elements and animations',
-        'Integration with custom payment solutions and ERP systems',
-        'Unlimited product catalog',
-        'Comprehensive features implementation (e.g., loyalty programs, multi-language support)',
-        '16-week development timeline',
-        'Unlimited rounds of revisions',
+        'Everything in Business Platform',
+        'Multi-user SaaS architecture (accounts & billing)',
+        'Unlimited modules & screens',
+        'Public API for your own integrations',
+        'Advanced automations & background jobs',
+        'Performance & security hardening',
+        'Scalable cloud infrastructure',
+        'Admin control panel',
+        'Typical timeline: 12–16 weeks',
         'Dedicated project manager',
-        '24/7 priority support',
-        'Ownership rights',
-        'Satisfaction guarantee',
-        'Free delivery of final app files',
-        'Supported formats: APK (Android) and IPA (iOS)',
+        'Team training & full documentation',
+        'Full source code & ownership',
+        '90 days priority support',
       ],
     },
   ],
 
   process: [
-    { title: 'Discovery & Planning', desc: 'We understand your business, customers and exact app goals.' },
-    { title: 'Design & Prototype', desc: 'We create wireframes and visual designs for your approval.' },
-    { title: 'Development & Testing', desc: 'We build the app, test thoroughly and fix any issues.' },
-    { title: 'Launch & Support', desc: 'We submit to app stores and give you training + 30 days support.' },
+    { title: 'Discovery & Blueprint', desc: 'We map your process, your pain points and your tools, then spec exactly what gets built — with a fixed quote before any code.' },
+    { title: 'Design & Prototype', desc: 'You see and click through the screens before we build them, so there are no surprises about how the software will work.' },
+    { title: 'Build & Weekly Demos', desc: 'We build in weekly stages and demo real, working software every week. Your feedback shapes each next step.' },
+    { title: 'Launch, Training & Support', desc: 'We deploy, move your data, train your team and stay on hand after launch while everyone settles in.' },
   ],
 
   faqs: [
     {
-      question: 'Do you build for iOS, Android or both?',
-      answer: 'We build native apps for both. Basic packages are single-platform, higher ones include both iOS and Android.',
+      question: 'How much does custom software cost?',
+      answer: 'It depends on four things: how many features and screens you need, how complex the rules behind them are, how many other systems it must connect to, and how many types of users (staff, customers, admins) it serves. A focused internal tool starts at $2,999; connected business platforms are typically $5,999; full SaaS platforms start at $9,999. Every project gets a fixed quote after a free discovery session — the price we agree is the price you pay.',
     },
     {
-      question: 'How long does it take?',
-      answer: 'Timeline depends on complexity: 2 weeks for Basic, up to 16 weeks for Enterprise E-Commerce.',
+      question: 'How long does it take to build?',
+      answer: 'A working first version usually takes 4–10 weeks. Starter systems typically launch in 6–8 weeks, business platforms in 8–12, and larger SaaS platforms in 12–16. We build in stages with a live demo every week, so you are using real software early instead of waiting months for one big reveal.',
     },
     {
-      question: 'Will I own the app and code?',
-      answer: 'Yes – 100% ownership and full source code delivered to you upon completion.',
+      question: 'Do I own the software and the code?',
+      answer: 'Yes — 100%. The source code, the data and the system are yours, delivered in full at launch. There is no lock-in and no per-seat licence fee for your own software: you can host it where you like and hire any developer to extend it in future.',
     },
     {
-      question: 'Can I update the app later?',
-      answer: 'Yes. You get all source files so you or any developer can make future changes easily.',
+      question: 'What happens after launch? Who maintains it?',
+      answer: 'Every package includes a post-launch support window (30–90 days) for bug fixes. After that, most clients take an optional care plan covering hosting checks, security updates, small improvements and priority support — or hand the code to their own developer. Because you own everything, that choice is entirely yours.',
+    },
+    {
+      question: 'Should I buy off-the-shelf software instead?',
+      answer: 'Sometimes, honestly, yes — if a proven tool already does exactly what you need, buy it. Custom software wins when your process is your advantage: when your team wastes hours on workarounds, double entry or tools that almost fit, or when you are paying per-seat fees for five products that still do not talk to each other. The free consultation exists to give you an honest answer either way.',
+    },
+    {
+      question: 'Can it connect to the tools we already use?',
+      answer: 'In most cases, yes. We regularly integrate payments (Stripe, PayPal), accounting (QuickBooks), Google services, shipping carriers, CRMs and existing websites through their APIs. During discovery we check every tool on your list and confirm exactly what can be connected before you commit.',
     },
   ],
 
   addOns: [
-    { title: 'Payment Gateway Integration', price: '$499', desc: 'Stripe, PayPal, local gateways setup & testing.' },
-    { title: 'Push Notifications Setup', price: '$299', desc: 'Send order updates, promotions and reminders.' },
-    { title: 'Ongoing Maintenance', price: '$199/month', desc: 'Bug fixes, updates and store compliance.' },
+    { title: 'Extra API Integration', price: '$499', desc: 'Connect an additional platform — accounting, payments, shipping, CRM and more.' },
+    { title: 'Data Migration', price: '$399', desc: 'We clean and move your spreadsheets or old-system data into the new software.' },
+    { title: 'Care & Maintenance Plan', price: '$249/month', desc: 'Hosting checks, security updates, backups and priority support after launch.' },
   ],
 
   relatedServices: [
-    { slug: 'web-design', title: 'Web Design', tagline: 'Website That Works With Your App' },
-    { slug: 'branding', title: 'Branding', tagline: 'Logo & Identity for Your App' },
-    { slug: 'lead-generation', title: 'Lead Generation', tagline: 'Drive Users to Download Your App' },
+    { slug: 'web-design', title: 'Web Design', tagline: 'A Public Website That Feeds Your Software' },
+    { slug: 'mobile-app-development', title: 'Mobile App Development', tagline: 'Put Your System in Everyone’s Pocket' },
+    { slug: 'ecommerce-web-development', title: 'E-commerce Development', tagline: 'Online Stores Connected to Your Operations' },
   ],
 };
 
-export default function AppDevelopmentPage() {
+export default function CustomDevelopmentPage() {
   const Icon = service.icon;
   const [selectedItem, setSelectedItem] = useState<ProofItem | null>(null);
 
@@ -395,7 +393,7 @@ export default function AppDevelopmentPage() {
         {/* PROBLEM → SOLUTION */}
         <section className="py-24 bg-white dark:bg-slate-950">
           <div className="container mx-auto px-4">
-            <SectionHeader tag="The Reality Check" title="Why Most Local Businesses Miss Mobile Customers" center={true} />
+            <SectionHeader tag="The Reality Check" title="Why Off-the-Shelf Software Holds Growing Businesses Back" center={true} />
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {service.problems.map((item, idx) => (
@@ -429,6 +427,30 @@ export default function AppDevelopmentPage() {
           </div>
         </section>
 
+        {/* WHAT WE BUILD */}
+        <section className="py-24 bg-slate-50 dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
+          <div className="container mx-auto px-4">
+            <SectionHeader tag="What We Build" title="Custom Software, Built for the Work You Actually Do" description="If your team does it every week in a spreadsheet, a paper form or three disconnected apps, it can probably live in one system built for you." center={true} />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {buildItems.map((item, idx) => {
+                const BuildIcon = item.icon;
+                return (
+                  <BlurIn key={idx} delay={idx * 0.1}>
+                    <div className="bg-white dark:bg-slate-950 p-8 rounded-[2rem] border border-slate-100 dark:border-slate-800 shadow-sm hover:shadow-xl transition-all h-full">
+                      <div className="w-14 h-14 rounded-2xl bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center text-primary mb-6">
+                        <BuildIcon size={28} />
+                      </div>
+                      <h3 className="text-xl font-black mb-4 text-slate-900 dark:text-white">{item.title}</h3>
+                      <p className="text-slate-500 dark:text-slate-400 font-medium leading-relaxed">{item.desc}</p>
+                    </div>
+                  </BlurIn>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
         {/* DELIVERABLES & METRICS */}
         <section className="py-24 bg-gradient-to-br from-[#1C9FF0] to-[#010FFF] text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-grid opacity-[0.05]"></div>
@@ -442,10 +464,10 @@ export default function AppDevelopmentPage() {
                     </span>
                   </div>
                   <h2 className="text-4xl md:text-5xl font-black text-white">
-                    Everything Needed for Your Mobile App
+                    Everything Needed to Run Your Business Your Way
                   </h2>
                   <p className="text-lg text-white mt-4 max-w-2xl">
-                    Clear deliverables that get your app live and working for customers.
+                    Clear deliverables, staged builds and weekly demos — you always know what is done, what is next and what it costs.
                   </p>
                 </div>
 
@@ -518,7 +540,7 @@ export default function AppDevelopmentPage() {
         {/* PROCESS */}
         <section className="py-24 bg-slate-50 dark:bg-slate-900 overflow-x-hidden">
           <div className="container mx-auto px-4">
-            <SectionHeader tag="How It Works" title="Clear Steps to Your App Launch" center={true} />
+            <SectionHeader tag="How It Works" title="From Process Map to Working Software" center={true} />
 
             <div className="relative mt-20">
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -544,7 +566,7 @@ export default function AppDevelopmentPage() {
         {/* PRICING */}
         <section id="pricing" className="py-24 bg-white dark:bg-slate-950">
           <div className="container mx-auto px-4">
-            <SectionHeader tag="Investment" title="Transparent Pricing for Your App" description="Choose the package that matches your business needs." center={true} />
+            <SectionHeader tag="Investment" title="Transparent Pricing for Custom Software" description="Fixed quotes after a free discovery session — no hourly meters, no surprise invoices." center={true} />
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
               {service.packages.map((pkg, i) => (
@@ -602,22 +624,22 @@ export default function AppDevelopmentPage() {
         {/* WHY US */}
         <section className="py-24 bg-gradient-to-br from-[#1C9FF0] to-[#010FFF] dark:bg-black text-white">
           <div className="container mx-auto px-4 text-center max-w-4xl">
-            <h2 className="text-3xl md:text-5xl font-black mb-12">Why Local Owners Choose DezignLoop for Apps</h2>
+            <h2 className="text-3xl md:text-5xl font-black mb-12">Why Owners Choose DezignLoop for Custom Software</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
               <div className="p-8 rounded-3xl bg-white/5 border border-white/10">
-                <Globe className="text-white mb-6" size={32} />
-                <h3 className="text-xl font-black mb-4">Built for Local Businesses</h3>
-                <p className="text-white font-medium">We understand what small services and shops need in a mobile app.</p>
+                <Settings className="text-white mb-6" size={32} />
+                <h3 className="text-xl font-black mb-4">Built Around Your Process</h3>
+                <p className="text-white font-medium">Your business does not have to change to fit the software — the software is built to fit your business.</p>
+              </div>
+              <div className="p-8 rounded-3xl bg-white/5 border border-white/10">
+                <Code2 className="text-white mb-6" size={32} />
+                <h3 className="text-xl font-black mb-4">You Own Everything</h3>
+                <p className="text-white font-medium">Full source code, your data, your system. No lock-in, no per-seat fees for your own software, ever.</p>
               </div>
               <div className="p-8 rounded-3xl bg-white/5 border border-white/10">
                 <Clock className="text-white mb-6" size={32} />
-                <h3 className="text-xl font-black mb-4">Fast & Affordable</h3>
-                <p className="text-white font-medium">Launch-ready apps in weeks, not years – at prices small businesses can afford.</p>
-              </div>
-              <div className="p-8 rounded-3xl bg-white/5 border border-white/10">
-                <TrendingUp className="text-white mb-6" size={32} />
-                <h3 className="text-xl font-black mb-4">Real Business Results</h3>
-                <p className="text-white font-medium">More bookings, orders and revenue – not just a pretty app.</p>
+                <h3 className="text-xl font-black mb-4">Fixed Price, Weekly Proof</h3>
+                <p className="text-white font-medium">A fixed quote before we start and a live demo every week — you watch your software take shape, step by step.</p>
               </div>
             </div>
           </div>
