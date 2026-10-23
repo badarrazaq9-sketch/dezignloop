@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description:
     'Professional 3D logo design services for small businesses and brands. Stunning three-dimensional logos that stand out on digital platforms, packaging, and marketing materials. USA-based design team.',
   alternates: {
-    canonical: 'https://www.dezignloop.com/threed-logo',
+    canonical: 'https://www.dezignloop.com/services/ThreeDlogo',
   },
   openGraph: {
     title: '3D Logo Design – DezignLoop',
     description: 'Stunning 3D logos that make your brand pop. Professional three-dimensional logo design for digital and print.',
-    url: 'https://www.dezignloop.com/threed-logo',
+    url: 'https://www.dezignloop.com/services/ThreeDlogo',
     images: [
       {
         url: '/og-3d-logo.jpg',
@@ -28,8 +28,8 @@ const threeDLogoSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.dezignloop.com/threed-logo/#webpage",
-      "url": "https://www.dezignloop.com/threed-logo",
+      "@id": "https://www.dezignloop.com/services/ThreeDlogo/#webpage",
+      "url": "https://www.dezignloop.com/services/ThreeDlogo",
       "name": "3D Logo Design Services – DezignLoop",
       "isPartOf": {
         "@id": "https://www.dezignloop.com/#website"
@@ -57,7 +57,7 @@ const threeDLogoSchema = {
             "@type": "ListItem",
             "position": 3,
             "name": "3D Logo Design",
-            "item": "https://www.dezignloop.com/threed-logo"
+            "item": "https://www.dezignloop.com/services/ThreeDlogo"
           }
         ]
       }

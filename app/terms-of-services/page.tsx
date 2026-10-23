@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://www.dezignloop.com/terms',
+    canonical: 'https://www.dezignloop.com/terms-of-services',
   },
 };
 
@@ -23,8 +23,8 @@ const termsSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.dezignloop.com/terms/#webpage",
-      "url": "https://www.dezignloop.com/terms",
+      "@id": "https://www.dezignloop.com/terms-of-services/#webpage",
+      "url": "https://www.dezignloop.com/terms-of-services",
       "name": "Terms of Service – DezignLoop",
       "isPartOf": {
         "@id": "https://www.dezignloop.com/#website"
@@ -46,7 +46,7 @@ const termsSchema = {
             "@type": "ListItem",
             "position": 2,
             "name": "Terms of Service",
-            "item": "https://www.dezignloop.com/terms"
+            "item": "https://www.dezignloop.com/terms-of-services"
           }
         ]
       }

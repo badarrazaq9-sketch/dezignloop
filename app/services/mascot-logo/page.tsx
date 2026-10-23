@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description:
     'Custom mascot logo design services for small businesses, sports teams, brands, and startups. Unique, memorable character logos that bring your brand to life. USA-based design team.',
   alternates: {
-    canonical: 'https://www.dezignloop.com/mascot-logo-design',
+    canonical: 'https://www.dezignloop.com/services/mascot-logo',
   },
   openGraph: {
     title: 'Mascot Logo Design – DezignLoop',
     description: 'Custom mascot logos that make your brand unforgettable. Professional character design for businesses and teams.',
-    url: 'https://www.dezignloop.com/mascot-logo-design',
+    url: 'https://www.dezignloop.com/services/mascot-logo',
     images: [
       {
         url: '/og-mascot-logo.jpg',
@@ -28,8 +28,8 @@ const mascotLogoSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.dezignloop.com/mascot-logo-design/#webpage",
-      "url": "https://www.dezignloop.com/mascot-logo-design",
+      "@id": "https://www.dezignloop.com/services/mascot-logo/#webpage",
+      "url": "https://www.dezignloop.com/services/mascot-logo",
       "name": "Mascot Logo Design Services – DezignLoop",
       "isPartOf": {
         "@id": "https://www.dezignloop.com/#website"
@@ -57,7 +57,7 @@ const mascotLogoSchema = {
             "@type": "ListItem",
             "position": 3,
             "name": "Mascot Logo Design",
-            "item": "https://www.dezignloop.com/mascot-logo-design"
+            "item": "https://www.dezignloop.com/services/mascot-logo"
           }
         ]
       }

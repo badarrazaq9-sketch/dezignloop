@@ -41,6 +41,22 @@ const nextConfig = {
   poweredByHeader: false,
   // Remove: swcMinify (automatically enabled)
   // Remove: productionBrowserSourceMaps (use env variable if needed)
+
+  // === PERMANENT REDIRECTS ===
+  // Legacy URLs that were published in the sitemap / page canonicals but never
+  // existed as routes. Each one now lands on its real page. Added 2026-10-22
+  // for the GSC indexing fix; safe to remove once Google drops the old URLs.
+  async redirects() {
+    return [
+      { source: '/privacy', destination: '/privacy-policy', permanent: true },
+      { source: '/refund', destination: '/refund-policy', permanent: true },
+      { source: '/terms', destination: '/terms-of-services', permanent: true },
+      { source: '/services/mascot-logo-design', destination: '/services/mascot-logo', permanent: true },
+      { source: '/services/threed-logo', destination: '/services/ThreeDlogo', permanent: true },
+      { source: '/mascot-logo-design', destination: '/services/mascot-logo', permanent: true },
+      { source: '/threed-logo', destination: '/services/ThreeDlogo', permanent: true },
+    ];
+  },
 };
 
 module.exports = nextConfig;

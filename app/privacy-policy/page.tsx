@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://www.dezignloop.com/privacy',
+    canonical: 'https://www.dezignloop.com/privacy-policy',
   },
 };
 
@@ -23,8 +23,8 @@ const privacySchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.dezignloop.com/privacy/#webpage",
-      "url": "https://www.dezignloop.com/privacy",
+      "@id": "https://www.dezignloop.com/privacy-policy/#webpage",
+      "url": "https://www.dezignloop.com/privacy-policy",
       "name": "Privacy Policy – DezignLoop",
       "isPartOf": {
         "@id": "https://www.dezignloop.com/#website"
@@ -46,7 +46,7 @@ const privacySchema = {
             "@type": "ListItem",
             "position": 2,
             "name": "Privacy Policy",
-            "item": "https://www.dezignloop.com/privacy"
+            "item": "https://www.dezignloop.com/privacy-policy"
           }
         ]
       }
