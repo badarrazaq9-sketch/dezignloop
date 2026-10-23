@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import TermsOfServicePage from '@/components/Terms-conditions';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service – DezignLoop',
+  title: 'Terms of Service',
   description:
     'DezignLoop terms of service: service agreements, payment terms, project timelines, revisions policy, and client responsibilities for web design, branding, and digital marketing services.',
   robots: {

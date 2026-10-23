@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ContactClient from './ContactClient';
 
 export const metadata: Metadata = {
-  title: 'Contact DezignLoop – Free Consultation for Small Businesses',
+  title: 'Contact Us – Free Consultation for Small Businesses',
   description:
     'Ready to grow? Contact our team for a free consultation on web design, branding, SEO, apps or marketing. Email: support@dezignloop.com | Call: +1 (843) 410-9324. Fast response.',
   alternates: {

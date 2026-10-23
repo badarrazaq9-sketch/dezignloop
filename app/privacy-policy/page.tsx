@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import LegalPage from '@/components/LegalPage';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy – DezignLoop',
+  title: 'Privacy Policy',
   description:
     'DezignLoop privacy policy: how we collect, use, and protect your personal information when you use our web design, branding, and digital marketing services.',
   robots: {

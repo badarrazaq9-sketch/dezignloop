@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import LogoDesignClient from './LogoDesignClient';
 
 export const metadata: Metadata = {
-  title: 'Logo Design Services for Small Businesses | DezignLoop',
+  title: 'Logo Design Services for Small Businesses',
   description:
     'Professional logo design and brand identity packages for small businesses and startups. Fast turnaround, unlimited revisions, full ownership. Packages start from $125. Get your custom logo today.',
   alternates: {

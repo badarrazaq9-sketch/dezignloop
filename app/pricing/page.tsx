@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import PricingClient from './PricingClient';
 
 export const metadata: Metadata = {
-  title: 'Pricing – Affordable Packages for Small Businesses | DezignLoop',
+  title: 'Pricing – Affordable Packages for Small Businesses',
   description:
     'Transparent, no-hidden-fee pricing for web design, branding, SEO, mobile apps, social media marketing & more. Packages starting from $349 – built for small business budgets and real growth.',
   alternates: {

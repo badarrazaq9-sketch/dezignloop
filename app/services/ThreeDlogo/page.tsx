@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ThreeDLogoPage from "./threed-logo";
 
 export const metadata: Metadata = {
-  title: '3D Logo Design Services – DezignLoop',
+  title: '3D Logo Design Services',
   description:
     'Professional 3D logo design services for small businesses and brands. Stunning three-dimensional logos that stand out on digital platforms, packaging, and marketing materials. USA-based design team.',
   alternates: {
