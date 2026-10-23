@@ -111,7 +111,7 @@ export const metadata: Metadata = {
     template: '%s | DezignLoop',
   },
   description:
-    'USA-based affordable web design, branding, SEO, app development & marketing services built for small businesses. Fast delivery, results-driven. Contact us today!',
+    'USA-based web design, branding, SEO, app development & marketing for small businesses. Fast delivery, transparent pricing, results that show.',
 keywords: [
   // Web Design
   'web design for small businesses USA',

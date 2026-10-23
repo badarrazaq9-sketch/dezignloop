@@ -3,9 +3,9 @@ import WebDesignClient from './WebDesignClient';
 
 
 export const metadata: Metadata = {
-  title: 'Web Design Services for Small Businesses',
+  title: 'Web Design for Small Businesses — From $999',
   description:
-    'Custom, fast-loading, mobile-friendly websites built for small businesses. High-conversion designs, SEO-ready, responsive across all devices. Affordable packages starting from $999.',
+    'Fast, mobile-friendly websites designed to turn visitors into customers. SEO-ready builds with packages from $999 — see examples and get a free quote.',
   alternates: {
     canonical: 'https://www.dezignloop.com/services/web-design',
   },
@@ -41,7 +41,7 @@ const webDesignSchema = {
       "about": {
         "@id": "https://www.dezignloop.com/#organization"
       },
-      "description": "Custom, fast-loading, mobile-friendly websites built for small businesses. High-conversion designs, SEO-ready, responsive across all devices. Affordable packages starting from $999.",
+      "description": "Fast, mobile-friendly websites designed to turn visitors into customers. SEO-ready builds with packages from $999 — see examples and get a free quote.",
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [

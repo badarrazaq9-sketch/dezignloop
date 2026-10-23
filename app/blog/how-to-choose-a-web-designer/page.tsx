@@ -5,14 +5,14 @@ import Footer from "@/components/Footer";
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "How to Choose a Web Designer: 12 Questions to Ask Before You Hire",
+  title: "How to Choose a Web Designer: 12 Questions to Ask",
   description: "How to choose a web designer for your small business: the 12 questions to ask, what good answers sound like, red flags, and freelancer vs agency explained.",
   keywords: ["how to choose a web designer"],
   alternates: {
     canonical: "https://www.dezignloop.com/blog/how-to-choose-a-web-designer",
   },
   openGraph: {
-    title: "How to Choose a Web Designer: 12 Questions to Ask Before You Hire",
+    title: "How to Choose a Web Designer: 12 Questions to Ask",
     description: "How to choose a web designer for your small business: the 12 questions to ask, what good answers sound like, red flags, and freelancer vs agency explained.",
     url: "https://www.dezignloop.com/blog/how-to-choose-a-web-designer",
     siteName: 'DezignLoop',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "How to Choose a Web Designer: 12 Questions to Ask Before You Hire",
+    title: "How to Choose a Web Designer: 12 Questions to Ask",
     description: "How to choose a web designer for your small business: the 12 questions to ask, what good answers sound like, red flags, and freelancer vs agency explained.",
     images: ['https://www.dezignloop.com/icon-512x512.png'],
   },

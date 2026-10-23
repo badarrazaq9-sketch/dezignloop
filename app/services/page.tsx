@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import ServicesClient from './ServicesClient';
 
 export const metadata: Metadata = {
-  title: 'Our Services – Web Design, SEO, Apps & Marketing',
+  title: 'Web Design, Apps & SEO for Small Businesses',
   description:
-    'Full range of digital services for small businesses: professional web design, branding, local SEO, mobile app development, and growth marketing. Get started today.',
+    'Web design, branding, e-commerce, apps, SEO and marketing for small businesses — one expert team, transparent pricing, real results. Start today.',
   alternates: {
     canonical: 'https://www.dezignloop.com/services',
   },
@@ -34,7 +34,7 @@ const servicesSchema = {
       "@type": "WebPage",
       "@id": "https://www.dezignloop.com/services/#webpage",
       "url": "https://www.dezignloop.com/services",
-      "name": "Our Services – Web Design, SEO, Apps & Marketing – DezignLoop",
+      "name": "Web Design, Apps & SEO for Small Businesses – DezignLoop",
       "isPartOf": {
         "@id": "https://www.dezignloop.com/#website"
       },

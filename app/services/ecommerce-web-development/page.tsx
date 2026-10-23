@@ -3,9 +3,9 @@ import EcommerceClient from './EcommerceClient';
 
 
 export const metadata: Metadata = {
-  title: 'E-commerce Development for Small Businesses',
+  title: 'E-commerce Web Design for Small Businesses',
   description:
-    'Custom online stores that scale and sell. Seamless shopping experience, secure payments, mobile-optimized. Built for retailers and online shops of all sizes.',
+    'Shopify and WooCommerce stores built to sell — product pages that convert, secure checkout, mobile-first design. Packages from $999 for small retailers.',
   alternates: {
     canonical: 'https://www.dezignloop.com/services/ecommerce-web-development',
   },
@@ -41,7 +41,7 @@ const ecommerceSchema = {
       "about": {
         "@id": "https://www.dezignloop.com/#organization"
       },
-      "description": "Custom online stores that scale and sell. Seamless shopping experience, secure payments, mobile-optimized. Built for retailers and online shops of all sizes.",
+      "description": "Shopify and WooCommerce stores built to sell — product pages that convert, secure checkout, mobile-first design. Packages from $999 for small retailers.",
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -76,7 +76,7 @@ const ecommerceSchema = {
         "@type": "Country",
         "name": "United States"
       },
-      "description": "Custom online stores that scale and sell. Seamless shopping experience, secure payments, mobile-optimized. Built for retailers and online shops of all sizes.",
+      "description": "Shopify and WooCommerce stores built to sell — product pages that convert, secure checkout, mobile-first design. Packages from $999 for small retailers.",
       "offers": {
         "@type": "Offer",
         "price": "0",
