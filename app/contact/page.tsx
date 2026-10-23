@@ -68,7 +68,7 @@ const contactSchema = {
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+1-843-410-9324",
+        "telephone": "+1-843-284-3078",
         "contactType": "customer service",
         "email": "support@dezignloop.com",
         "areaServed": "US",
