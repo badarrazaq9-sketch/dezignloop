@@ -3,9 +3,9 @@ import type { Metadata } from 'next';
 import HomeClient from './HomeClient';
 
 export const metadata: Metadata = {
-  title: 'DezignLoop | Web Design & Digital Growth for Small Businesses',
+  title: 'Web Design That Turns Visitors Into Customers | DezignLoop',
   description:
-    'Affordable, high-conversion web design, branding, SEO, mobile apps & marketing built for small businesses in the USA. Fast delivery, real results. Free consultation today!',
+    'Web design, branding, SEO and apps for US small businesses — fast, high-converting websites with transparent pricing. Get a free consultation today.',
   alternates: {
     canonical: 'https://www.dezignloop.com',
   },
@@ -43,7 +43,7 @@ const homePageSchema = {
       "@type": "WebPage",
       "@id": "https://www.dezignloop.com/#webpage",  // ← FIXED: was missing / before #
       "url": "https://www.dezignloop.com",
-      "name": "DezignLoop | Web Design & Digital Growth for Small Businesses",
+      "name": "Web Design That Turns Visitors Into Customers | DezignLoop",
       "isPartOf": {
         "@id": "https://www.dezignloop.com/#website"
       },

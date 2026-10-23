@@ -5,15 +5,15 @@ import Footer from "@/components/Footer";
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "How to Start Selling Online: A Step-by-Step Guide for Small Businesses",
-  description: "How to start selling online as a small business: what to sell first, platform choice, payments and shipping, product pages that sell, and your first traffic.",
+  title: "How to Start Selling Online as a Small Business",
+  description: "How to start selling online: what to sell first, choosing a platform, payments and shipping, product pages that sell, and getting your first traffic.",
   keywords: ["how to start selling online"],
   alternates: {
     canonical: "https://www.dezignloop.com/blog/how-to-start-selling-online-small-business",
   },
   openGraph: {
-    title: "How to Start Selling Online: A Step-by-Step Guide for Small Businesses",
-    description: "How to start selling online as a small business: what to sell first, platform choice, payments and shipping, product pages that sell, and your first traffic.",
+    title: "How to Start Selling Online as a Small Business",
+    description: "How to start selling online: what to sell first, choosing a platform, payments and shipping, product pages that sell, and getting your first traffic.",
     url: "https://www.dezignloop.com/blog/how-to-start-selling-online-small-business",
     siteName: 'DezignLoop',
     type: 'article',
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "How to Start Selling Online: A Step-by-Step Guide for Small Businesses",
-    description: "How to start selling online as a small business: what to sell first, platform choice, payments and shipping, product pages that sell, and your first traffic.",
+    title: "How to Start Selling Online as a Small Business",
+    description: "How to start selling online: what to sell first, choosing a platform, payments and shipping, product pages that sell, and getting your first traffic.",
     images: ['https://www.dezignloop.com/icon-512x512.png'],
   },
 };
@@ -45,7 +45,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How to Start Selling Online: A Step-by-Step Guide for Small Businesses",
-  "description": "How to start selling online as a small business: what to sell first, platform choice, payments and shipping, product pages that sell, and your first traffic.",
+  "description": "How to start selling online: what to sell first, choosing a platform, payments and shipping, product pages that sell, and getting your first traffic.",
   "url": "https://www.dezignloop.com/blog/how-to-start-selling-online-small-business",
   "image": "https://www.dezignloop.com/icon-512x512.png",
   "articleSection": "Guides",

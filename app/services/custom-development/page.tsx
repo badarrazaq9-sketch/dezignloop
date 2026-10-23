@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import CustomDevelopmentClient from './CustomDevelopmentClient';
 
 export const metadata: Metadata = {
-  title: 'Custom Web & Software Development',
+  title: 'Custom Software Development for Small Businesses',
   description:
-    'Tailored web applications, SaaS platforms and complex systems built around your unique business goals, processes and requirements. Scalable & secure.',
+    'Custom software, dashboards, portals and automations built around your process — fixed quotes from $2,999, weekly demos, 100% code ownership.',
   alternates: {
     canonical: 'https://www.dezignloop.com/services/custom-development',
   },
@@ -40,7 +40,7 @@ const customDevSchema = {
       "about": {
         "@id": "https://www.dezignloop.com/#organization"
       },
-      "description": "Tailored web applications, SaaS platforms and complex systems built around your unique business goals, processes and requirements. Scalable & secure.",
+      "description": "Custom software, dashboards, portals and automations built around your process — fixed quotes from $2,999, weekly demos, 100% code ownership.",
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -75,7 +75,7 @@ const customDevSchema = {
         "@type": "Country",
         "name": "United States"
       },
-      "description": "Tailored web applications, SaaS platforms and complex systems built around your unique business goals, processes and requirements. Scalable & secure.",
+      "description": "Custom software, dashboards, portals and automations built around your process — fixed quotes from $2,999, weekly demos, 100% code ownership.",
       "offers": {
         "@type": "Offer",
         "price": "0",

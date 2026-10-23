@@ -6,14 +6,14 @@ import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: "How Much Does a Logo Cost for a Small Business? (2026)",
-  description: "How much does a logo cost for a small business in 2026? Real US pricing for DIY tools, freelancers and agencies, what is included, and how to budget without overpaying.",
+  description: "How much does a logo cost in 2026? Real US pricing for DIY tools, freelancers and agencies, what is included, and how to budget without overpaying.",
   keywords: ["how much does a logo cost"],
   alternates: {
     canonical: "https://www.dezignloop.com/blog/how-much-does-a-logo-cost-small-business",
   },
   openGraph: {
     title: "How Much Does a Logo Cost for a Small Business? (2026)",
-    description: "How much does a logo cost for a small business in 2026? Real US pricing for DIY tools, freelancers and agencies, what is included, and how to budget without overpaying.",
+    description: "How much does a logo cost in 2026? Real US pricing for DIY tools, freelancers and agencies, what is included, and how to budget without overpaying.",
     url: "https://www.dezignloop.com/blog/how-much-does-a-logo-cost-small-business",
     siteName: 'DezignLoop',
     type: 'article',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "How Much Does a Logo Cost for a Small Business? (2026)",
-    description: "How much does a logo cost for a small business in 2026? Real US pricing for DIY tools, freelancers and agencies, what is included, and how to budget without overpaying.",
+    description: "How much does a logo cost in 2026? Real US pricing for DIY tools, freelancers and agencies, what is included, and how to budget without overpaying.",
     images: ['https://www.dezignloop.com/icon-512x512.png'],
   },
 };
@@ -45,7 +45,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "How Much Does a Logo Cost for a Small Business? (2026)",
-  "description": "How much does a logo cost for a small business in 2026? Real US pricing for DIY tools, freelancers and agencies, what is included, and how to budget without overpaying.",
+  "description": "How much does a logo cost in 2026? Real US pricing for DIY tools, freelancers and agencies, what is included, and how to budget without overpaying.",
   "url": "https://www.dezignloop.com/blog/how-much-does-a-logo-cost-small-business",
   "image": "https://www.dezignloop.com/icon-512x512.png",
   "articleSection": "Guides",
