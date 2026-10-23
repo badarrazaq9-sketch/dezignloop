@@ -50,10 +50,10 @@ const ContactPage = () => {
                           Call Us
                         </div>
                         <a
-                          href="tel:+18434109324"
+                          href="tel:+18432843078"
                           className="text-xl font-bold text-slate-900 dark:text-white hover:text-primary transition-colors"
                         >
-                          +1 (843) 410-9324
+                          +1 (843) 284-3078
                         </a>
                         {/* ADDED TEXT ONLY */}
                         <div className="text-sm text-slate-500 mt-1 font-medium">
