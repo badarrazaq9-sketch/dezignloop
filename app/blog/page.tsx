@@ -59,6 +59,96 @@ export default function BlogIndex() {
           {/* Articles */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             <div
+              key="how-much-does-a-logo-cost-small-business"
+              className="group bg-slate-50 dark:bg-slate-900 rounded-[3rem] overflow-hidden border border-slate-100 dark:border-slate-800 hover:shadow-2xl transition-all"
+            >
+              <div className="p-10 md:p-12 flex flex-col justify-center">
+                <span className="inline-block mb-4 px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-700 w-fit">
+                  Guide
+                </span>
+                <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-4">
+                  How Much Does a Logo Cost for a Small Business? (2026)
+                </h2>
+                <p className="text-slate-500 dark:text-slate-400 font-medium leading-relaxed mb-8">
+                  How much does a logo cost in 2026? DIY, freelancer and agency pricing, logo vs full brand identity, and the red flags that make cheap logos expensive.
+                </p>
+                <div className="relative bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 mb-8">
+                  <div className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">
+                    What you&apos;ll learn
+                  </div>
+                  <div className="text-2xl font-black text-primary">
+                    Real 2026 pricing: $300 to $5,000
+                  </div>
+                </div>
+                <Link
+                  href="/blog/how-much-does-a-logo-cost-small-business"
+                  className="inline-flex items-center gap-2 font-black text-slate-900 dark:text-white hover:text-primary transition-colors w-fit"
+                >
+                  Read Article <ArrowRight size={20} />
+                </Link>
+              </div>
+            </div>
+            <div
+              key="how-to-choose-a-web-designer"
+              className="group bg-slate-50 dark:bg-slate-900 rounded-[3rem] overflow-hidden border border-slate-100 dark:border-slate-800 hover:shadow-2xl transition-all"
+            >
+              <div className="p-10 md:p-12 flex flex-col justify-center">
+                <span className="inline-block mb-4 px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-700 w-fit">
+                  Guide
+                </span>
+                <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-4">
+                  How to Choose a Web Designer: 12 Questions to Ask Before You Hire
+                </h2>
+                <p className="text-slate-500 dark:text-slate-400 font-medium leading-relaxed mb-8">
+                  Hiring a web designer? The 12 questions to ask before you sign, what good answers sound like, and the red flags that should end the conversation.
+                </p>
+                <div className="relative bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 mb-8">
+                  <div className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">
+                    What you&apos;ll learn
+                  </div>
+                  <div className="text-2xl font-black text-primary">
+                    12 questions that protect your budget
+                  </div>
+                </div>
+                <Link
+                  href="/blog/how-to-choose-a-web-designer"
+                  className="inline-flex items-center gap-2 font-black text-slate-900 dark:text-white hover:text-primary transition-colors w-fit"
+                >
+                  Read Article <ArrowRight size={20} />
+                </Link>
+              </div>
+            </div>
+            <div
+              key="how-to-start-selling-online-small-business"
+              className="group bg-slate-50 dark:bg-slate-900 rounded-[3rem] overflow-hidden border border-slate-100 dark:border-slate-800 hover:shadow-2xl transition-all"
+            >
+              <div className="p-10 md:p-12 flex flex-col justify-center">
+                <span className="inline-block mb-4 px-4 py-1 rounded-full text-xs font-black uppercase tracking-widest bg-white dark:bg-slate-800 text-slate-500 dark:text-slate-400 border border-slate-200 dark:border-slate-700 w-fit">
+                  Guide
+                </span>
+                <h2 className="text-3xl font-black text-slate-900 dark:text-white mb-4">
+                  How to Start Selling Online: A Step-by-Step Guide for Small Businesses
+                </h2>
+                <p className="text-slate-500 dark:text-slate-400 font-medium leading-relaxed mb-8">
+                  How to start selling online: what to sell first, choosing a platform, payments and shipping, product pages that sell, and getting your first traffic.
+                </p>
+                <div className="relative bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 mb-8">
+                  <div className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-1">
+                    What you&apos;ll learn
+                  </div>
+                  <div className="text-2xl font-black text-primary">
+                    From first product to first sale
+                  </div>
+                </div>
+                <Link
+                  href="/blog/how-to-start-selling-online-small-business"
+                  className="inline-flex items-center gap-2 font-black text-slate-900 dark:text-white hover:text-primary transition-colors w-fit"
+                >
+                  Read Article <ArrowRight size={20} />
+                </Link>
+              </div>
+            </div>
+            <div
               key="how-much-does-a-website-cost-small-business-2026"
               className="group bg-slate-50 dark:bg-slate-900 rounded-[3rem] overflow-hidden border border-slate-100 dark:border-slate-800 hover:shadow-2xl transition-all"
             >
