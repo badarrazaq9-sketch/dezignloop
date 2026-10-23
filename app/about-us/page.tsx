@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import AboutUsPage from './aboutUS';
 
 export const metadata: Metadata = {
-  title: 'About Us – DezignLoop | Web Design & Digital Growth Agency',
+  title: 'About Us – Web Design & Digital Growth Agency',
   description:
     'Learn about DezignLoop, a USA-based premium web design agency helping small businesses grow with websites, branding, SEO, CRM, ecommerce, and digital marketing since 2019.',
   alternates: {

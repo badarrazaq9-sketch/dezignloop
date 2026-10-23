@@ -3,7 +3,7 @@ import AppDevelopmentClient from './AppDevelopmentClient';
 
 
 export const metadata: Metadata = {
-  title: 'Mobile App Development for Small Businesses | DezignLoop',
+  title: 'Mobile App Development for Small Businesses',
   description:
     'Custom iOS & Android apps for bookings, orders, loyalty programs & customer engagement. User-friendly, scalable, built for small business budgets and growth.',
   alternates: {

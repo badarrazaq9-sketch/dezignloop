@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import SocialMediaClient from './SocialMediaClient';
 
 export const metadata: Metadata = {
-  title: 'Social Media Marketing for Small Businesses | DezignLoop',
+  title: 'Social Media Marketing for Small Businesses',
   description:
     'Grow your Instagram, Facebook & TikTok presence. Content creation, targeted ads, engagement & lead generation tailored for startups and local brands.',
   alternates: {

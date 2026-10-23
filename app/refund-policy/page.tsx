@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import RefundPolicyPage from '@/components/Refund-Policy';
 
 export const metadata: Metadata = {
-  title: 'Refund Policy – DezignLoop',
+  title: 'Refund Policy',
   description:
     'DezignLoop refund policy: clear terms for cancellations, refunds, and satisfaction guarantees on web design, branding, SEO, and digital marketing services.',
   robots: {

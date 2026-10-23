@@ -3,7 +3,7 @@ import SeoClient from './SeoClient';
 
 
 export const metadata: Metadata = {
-  title: 'Local SEO Services for Small Businesses | DezignLoop',
+  title: 'Local SEO Services for Small Businesses',
   description:
     'Rank higher on Google and attract more local customers. Google Business optimization, citations, reviews & keyword strategy. Visible results in weeks.',
   alternates: {

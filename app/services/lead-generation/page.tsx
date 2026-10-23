@@ -3,7 +3,7 @@ import LeadGenerationClient from './LeadGenerationClient';
 
 
 export const metadata: Metadata = {
-  title: 'Lead Generation Services for Small Businesses | DezignLoop',
+  title: 'Lead Generation Services for Small Businesses',
   description:
     'Targeted campaigns that deliver qualified leads ready to buy. High-quality traffic, conversion-focused strategies for B2B companies and service providers.',
   alternates: {

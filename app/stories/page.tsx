@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import StoriesPage from "@/components/StoriesPage";
 
 export const metadata: Metadata = {
-  title: 'Success Stories & Case Studies – DezignLoop',
+  title: 'Success Stories & Case Studies',
   description:
     'See how DezignLoop helped small businesses grow with custom websites, branding, SEO, and digital marketing. Real results, real success stories.',
   alternates: {

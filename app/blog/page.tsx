@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Blog \u2013 Small Business Website, SEO & Marketing Guides | DezignLoop',
+  title: 'Blog \u2013 Small Business Website, SEO & Marketing Guides',
   description:
     'Practical guides for US small businesses: website costs, platform comparisons, website mistakes to fix, and local SEO that wins customers.',
   alternates: {

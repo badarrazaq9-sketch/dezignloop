@@ -3,7 +3,7 @@ import VideoEditingClient from './VideoEditingClient';
 
 
 export const metadata: Metadata = {
-  title: 'Video Editing Services for Small Businesses | DezignLoop',
+  title: 'Video Editing Services for Small Businesses',
   description:
     'Professional editing for ads, Reels, YouTube & product videos. Fast-paced, engaging cuts that boost views, retention and conversions. Quick turnaround.',
   alternates: {

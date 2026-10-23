@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import ServicesClient from './ServicesClient';
 
 export const metadata: Metadata = {
-  title: 'Our Services – Web Design, SEO, Apps & Marketing | DezignLoop',
+  title: 'Our Services – Web Design, SEO, Apps & Marketing',
   description:
     'Full range of digital services for small businesses: professional web design, branding, local SEO, mobile app development, and growth marketing. Get started today.',
   alternates: {

@@ -3,7 +3,7 @@ import WebDesignClient from './WebDesignClient';
 
 
 export const metadata: Metadata = {
-  title: 'Web Design Services for Small Businesses | DezignLoop',
+  title: 'Web Design Services for Small Businesses',
   description:
     'Custom, fast-loading, mobile-friendly websites built for small businesses. High-conversion designs, SEO-ready, responsive across all devices. Affordable packages starting from $999.',
   alternates: {

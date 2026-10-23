@@ -3,7 +3,7 @@ import EcommerceClient from './EcommerceClient';
 
 
 export const metadata: Metadata = {
-  title: 'E-commerce Development for Small Businesses | DezignLoop',
+  title: 'E-commerce Development for Small Businesses',
   description:
     'Custom online stores that scale and sell. Seamless shopping experience, secure payments, mobile-optimized. Built for retailers and online shops of all sizes.',
   alternates: {

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import BrandingClient from './BrandingClient';
 
 export const metadata: Metadata = {
-  title: 'Branding & Logo Design for Small Businesses | DezignLoop',
+  title: 'Branding & Logo Design for Small Businesses',
   description:
     'Professional brand identity, logos, color palettes and visual strategy that help small businesses stand out, build trust and communicate clearly. Fast & affordable.',
   alternates: {

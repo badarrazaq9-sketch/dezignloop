@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import MascotLogoPage from "./macot-logo-design";
 
 export const metadata: Metadata = {
-  title: 'Mascot Logo Design Services – DezignLoop',
+  title: 'Mascot Logo Design Services',
   description:
     'Custom mascot logo design services for small businesses, sports teams, brands, and startups. Unique, memorable character logos that bring your brand to life. USA-based design team.',
   alternates: {

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import CustomDevelopmentClient from './CustomDevelopmentClient';
 
 export const metadata: Metadata = {
-  title: 'Custom Web & Software Development | DezignLoop',
+  title: 'Custom Web & Software Development',
   description:
     'Tailored web applications, SaaS platforms and complex systems built around your unique business goals, processes and requirements. Scalable & secure.',
   alternates: {
