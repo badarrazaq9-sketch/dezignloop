@@ -26,6 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/stories',
     '/terms-of-services',
     '/contact',
+    '/questionnaire',
     '/blog',
     '/blog/how-much-does-a-logo-cost-small-business',
     '/blog/how-to-choose-a-web-designer',
