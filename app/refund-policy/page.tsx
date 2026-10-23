@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: 'https://www.dezignloop.com/refund',
+    canonical: 'https://www.dezignloop.com/refund-policy',
   },
 };
 
@@ -23,8 +23,8 @@ const refundSchema = {
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://www.dezignloop.com/refund/#webpage",
-      "url": "https://www.dezignloop.com/refund",
+      "@id": "https://www.dezignloop.com/refund-policy/#webpage",
+      "url": "https://www.dezignloop.com/refund-policy",
       "name": "Refund Policy – DezignLoop",
       "isPartOf": {
         "@id": "https://www.dezignloop.com/#website"
@@ -46,7 +46,7 @@ const refundSchema = {
             "@type": "ListItem",
             "position": 2,
             "name": "Refund Policy",
-            "item": "https://www.dezignloop.com/refund"
+            "item": "https://www.dezignloop.com/refund-policy"
           }
         ]
       }
