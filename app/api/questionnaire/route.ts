@@ -1,11 +1,14 @@
 // app/api/questionnaire/route.ts
 // Receives questionnaire submissions from /questionnaire.
 //
-// MODE (2026-10-23, Kelley's order): EMAIL-ONLY. Submissions are emailed to
-// Kelley (ADMIN_NOTIFY_EMAIL when set, otherwise kelleyjackson004@gmail.com)
-// with every answer listed one per line, and are NOT saved to the database.
-// The original Supabase save path is preserved below as comments — re-enable
-// it when Supabase is ready (see the commented block in POST).
+// MODE (2026-10-23, Kelley's order): EMAIL + FILE STORAGE. Submissions
+// are emailed to Kelley (ADMIN_NOTIFY_EMAIL when set, otherwise
+// kelleyjackson004@gmail.com) with every answer listed one per line, AND
+// saved as a JSON file in Vercel Blob storage (lib/submission-store.ts)
+// so the admin can download them all as one CSV. Submissions are NOT
+// saved to the database. The original Supabase save path is preserved
+// below as comments — re-enable it when Supabase is ready (see the
+// commented block in POST).
 //
 // The delivered schema's popup_leads columns are: name, email, phone,
 // service, budget, time_preference — the form's free-text answers ride in
@@ -15,6 +18,10 @@
 // import { insertRow } from '@/lib/supabase-rest';
 // import { escapeHtml, notifyAdmin } from '@/lib/notify';
 import { sendAdminEmail } from '@/lib/notify';
+import {
+  saveSubmission,
+  type SubmissionRecord,
+} from '@/lib/submission-store';
 
 function clean(value: unknown, maxLength = 2000): string | null {
   if (typeof value !== 'string') return null;
@@ -102,8 +109,27 @@ export async function POST(request: Request) {
   //   </div>`
   // );
 
-  // Email-only mode: send every submitted field to Kelley, one per line.
   const business = clean(body.business ?? body.businessName, 500);
+
+  const record: SubmissionRecord = {
+    received_at: new Date().toISOString(),
+    name,
+    email,
+    phone: row.phone,
+    business,
+    service,
+    budget: row.budget,
+    time_preference: row.time_preference,
+    notes,
+  };
+
+  // File storage (additional capture, Kelley's order 2026-10-23): save the
+  // submission as a JSON file in Vercel Blob so it can be downloaded from
+  // the admin panel as CSV. Silently skipped when the Blob token is not
+  // set yet — the email below remains the primary capture either way.
+  const stored = await saveSubmission(record);
+
+  // Email: send every submitted field to Kelley, one per line.
   const text = [
     'New questionnaire submission from dezignloop.com',
     '',
@@ -118,9 +144,13 @@ export async function POST(request: Request) {
   ].join('\n');
 
   const sent = await sendAdminEmail(`New questionnaire lead: ${name}`, text);
-  if (!sent) {
-    // Never fake a success: if the email cannot leave, the submitter hears so.
-    console.error('Questionnaire email failed to send for submitter:', email);
+  if (!sent && !stored) {
+    // Never fake a success: only when BOTH captures failed (the email
+    // could not leave and no file was saved) does the submitter hear so.
+    console.error(
+      'Questionnaire submission could not be captured (email failed, no file saved) for submitter:',
+      email
+    );
     return Response.json(
       {
         success: false,
@@ -128,6 +158,13 @@ export async function POST(request: Request) {
           'Submissions are temporarily unavailable. Please email support@dezignloop.com instead.',
       },
       { status: 503 }
+    );
+  }
+  if (!sent) {
+    // The lead is safe in file storage even though the email failed.
+    console.error(
+      'Questionnaire email failed, but the submission was saved to file storage for submitter:',
+      email
     );
   }
 
