@@ -10,6 +10,7 @@ import {
 } from '@/lib/supabase-rest';
 import LeadsTable, { type TableColumn } from '@/components/admin/LeadsTable';
 import LogoutButton from '@/components/admin/LogoutButton';
+import SubmissionsDownload from '@/components/admin/SubmissionsDownload';
 
 export const dynamic = 'force-dynamic';
 
@@ -63,6 +64,7 @@ function Shell({ children }: { children: React.ReactNode }) {
         </div>
       </header>
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-8 space-y-8">
+        <SubmissionsDownload />
         {children}
       </main>
     </div>
