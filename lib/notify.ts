@@ -17,7 +17,8 @@ export function escapeHtml(value: string): string {
 export async function sendEmail(options: {
   to: string;
   subject: string;
-  html: string;
+  html?: string;
+  text?: string;
 }): Promise<boolean> {
   const user = process.env.EMAIL_USER;
   const pass = process.env.EMAIL_PASSWORD;
@@ -34,6 +35,7 @@ export async function sendEmail(options: {
       to: options.to,
       subject: options.subject,
       html: options.html,
+      text: options.text,
     });
     return true;
   } catch (err) {
@@ -50,4 +52,17 @@ export async function notifyAdmin(
   const user = process.env.EMAIL_USER;
   if (!user) return false;
   return sendEmail({ to: user, subject, html });
+}
+
+/**
+ * Send a plain-text email to the admin notification address:
+ * ADMIN_NOTIFY_EMAIL when set, otherwise Kelley's inbox.
+ * Returns false when email is not configured or the send fails.
+ */
+export async function sendAdminEmail(
+  subject: string,
+  text: string
+): Promise<boolean> {
+  const to = process.env.ADMIN_NOTIFY_EMAIL || 'kelleyjackson004@gmail.com';
+  return sendEmail({ to, subject, text });
 }
