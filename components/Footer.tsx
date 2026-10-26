@@ -234,6 +234,15 @@ export default function Footer() {
             >
               Refund Policy
             </Link>
+
+            <a
+              href="https://www.google.com/maps/place/DezignLoop/@46.423669,-129.9427085,3z/data=!4m10!1m2!2m1!1sDezignLoop+St.+Petersburg+FL!3m6!1s0x49daa1addf075a13:0x4c4e4bd1b697b245!8m2!3d46.423669!4d-129.9427086!15sChxEZXppZ25Mb29wIFN0LiBQZXRlcnNidXJnIEZMkgEQc29mdHdhcmVfY29tcGFueeABAA!16s%2Fg%2F11ykvdj7pk"
+              target="_blank"
+              rel="noopener"
+              className="hover:text-slate-900 dark:hover:text-white transition-colors"
+            >
+              Find us on Google
+            </a>
           </div>
         </div>
       </div>
