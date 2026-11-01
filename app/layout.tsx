@@ -3,7 +3,6 @@ import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import LeadPopup from '@/components/LeadPopup';
-import PromoBanner from '@/components/PromoBanner';
 import ScrollProgressWheel from '@/components/ScrollProgressWheel';
 
 // === OPTIMIZED FONT LOADING ===
@@ -293,7 +292,6 @@ export default function RootLayout({
           }}
         />
         
-        <PromoBanner />
         <LeadPopup />
         <ScrollProgressWheel />
         {children}
