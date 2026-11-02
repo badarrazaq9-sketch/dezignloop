@@ -37,7 +37,7 @@ const schemaData = {
       "foundingDate": "2019",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+1-XXX-XXX-XXXX",
+        "telephone": "+1 (843) 284 3078",
         "contactType": "customer service",
         "email": "support@dezignloop.com",
         "availableLanguage": ["English"]
@@ -66,21 +66,16 @@ const schemaData = {
       "name": "DezignLoop",
       "image": "https://www.dezignloop.com/assets/Team.png",
       "url": "https://www.dezignloop.com",
-      "telephone": "+1-XXX-XXX-XXXX",
+      "telephone": "+1 (843) 284 3078",
       "email": "support@dezignloop.com",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Main Street",
-        "addressLocality": "City",
-        "addressRegion": "State",
-        "postalCode": "00000",
+        "streetAddress": "4th St N #2239",
+        "addressLocality": "Saint Petersburg",
+        "addressRegion": "FL",
+        "postalCode": "33712",
         "addressCountry": "US"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "40.7128",
-        "longitude": "-74.0060"
       },
       "openingHoursSpecification": [
         {
