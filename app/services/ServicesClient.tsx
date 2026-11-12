@@ -35,7 +35,7 @@ type Service = {
 export const metadata: Metadata = {
   title: 'Our Services – Web Design, SEO, Apps & Marketing',
   description:
-    'Full range of digital services for small businesses: professional web design, branding, local SEO, mobile app development, and growth marketing. Get started today.',
+    'Full range of digital services for small businesses: professional web design, branding, local SEO, mobile app development, growth marketing, and ebook formatting services for authors. Get started today.',
   alternates: {
     canonical: '/services',
   },
@@ -198,7 +198,11 @@ export default function ServicesSection() {
               Full-Stack Digital Services
             </h1>
             <p className="text-slate-600 dark:text-slate-400 text-lg mt-6 max-w-2xl mx-auto">
-              From web design to app development and marketing, we provide end-to-end digital services designed to grow your business.
+              From web design to app development and marketing, we provide end-to-end digital services designed to grow your business. Need a book published? Our{' '}
+              <Link href="/services/ebook-services" className="text-primary font-bold hover:underline">
+                ebook formatting services
+              </Link>{' '}
+              turn finished manuscripts into polished Kindle, EPUB, and PDF books.
             </p>
           </div>
 

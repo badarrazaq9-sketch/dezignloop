@@ -332,7 +332,7 @@ export default function LogoDesignPage() {
                                 <div className="inline-flex items-center gap-2 mb-6 px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 text-primary border border-blue-100 dark:border-blue-800 w-fit">
                                     <Icon size={16} />
                                     <span className="text-xs font-bold uppercase tracking-widest">
-                                        {service.title} Service
+                                        {service.title}
                                     </span>
                                 </div>
                                 <h1 className="text-5xl md:text-7xl font-black tracking-tighter text-slate-900 dark:text-white mb-8 leading-[0.95]">

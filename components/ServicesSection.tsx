@@ -13,6 +13,7 @@ import {
   ShoppingCart,
   Users,
   ArrowRight,
+  BookOpen,
 } from 'lucide-react';
 import Image from 'next/image'; // ← Added this import
 
@@ -77,6 +78,12 @@ const services: Service[] = [
     description: 'Engaging video content for ads, social media, and promotional campaigns.',
     icon: Video,
     slug: '/services/video-editing',
+  },
+  {
+    title: 'eBook Services',
+    description: 'Professional ebook formatting, cover design, and publishing support that turns manuscripts into books ready to sell.',
+    icon: BookOpen,
+    slug: '/services/ebook-services',
   },
 ];
 

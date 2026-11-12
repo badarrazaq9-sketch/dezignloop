@@ -3,15 +3,15 @@ import type { Metadata } from 'next';
 import EbookServicesClient from './EbookServicesClient';
 
 export const metadata: Metadata = {
-  title: 'eBook Services for Authors & Small Businesses',
+  title: 'eBook Formatting Services for Authors | DezignLoop',
   description:
-    'Professional eBook formatting, cover design, and publishing support for authors, coaches, and small businesses. Kindle, EPUB, and PDF — your manuscript turned into a polished book ready to sell.',
+    'Professional ebook formatting services, cover design, and publishing support for authors, coaches, and small businesses. Kindle, EPUB, and PDF — your manuscript turned into a polished book ready to sell.',
   alternates: {
     canonical: 'https://www.dezignloop.com/services/ebook-services',
   },
   openGraph: {
-    title: 'eBook Services – DezignLoop',
-    description: 'Professional eBook formatting, cover design, and publishing support for authors ready to sell their book.',
+    title: 'eBook Formatting Services – DezignLoop',
+    description: 'Professional ebook formatting services, cover design, and publishing support for authors ready to sell their book.',
     url: 'https://www.dezignloop.com/services/ebook-services',
   },
 };
@@ -26,14 +26,14 @@ const ebookServicesSchema = {
       "@type": "WebPage",
       "@id": "https://www.dezignloop.com/services/ebook-services/#webpage",
       "url": "https://www.dezignloop.com/services/ebook-services",
-      "name": "eBook Services for Authors & Small Businesses – DezignLoop",
+      "name": "eBook Formatting Services for Authors – DezignLoop",
       "isPartOf": {
         "@id": "https://www.dezignloop.com/#website"
       },
       "about": {
         "@id": "https://www.dezignloop.com/#organization"
       },
-      "description": "Professional eBook formatting, cover design, and publishing support for authors, coaches, and small businesses. Kindle, EPUB, and PDF — your manuscript turned into a polished book ready to sell.",
+      "description": "Professional ebook formatting services, cover design, and publishing support for authors, coaches, and small businesses. Kindle, EPUB, and PDF — your manuscript turned into a polished book ready to sell.",
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -60,7 +60,7 @@ const ebookServicesSchema = {
     },
     {
       "@type": "Service",
-      "serviceType": "eBook Services",
+      "serviceType": "eBook Formatting Services",
       "provider": {
         "@id": "https://www.dezignloop.com/#organization"
       },

@@ -130,6 +130,42 @@ const pricingSchema = {
           "offeredBy": {
             "@id": "https://www.dezignloop.com/#organization"
           }
+        },
+        {
+          "@type": "Offer",
+          "position": 7,
+          "name": "eBook Services",
+          "description": "Professional ebook formatting, cover design, and publishing support for authors",
+          "price": "499.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "offeredBy": {
+            "@id": "https://www.dezignloop.com/#organization"
+          }
+        },
+        {
+          "@type": "Offer",
+          "position": 8,
+          "name": "Book Writing",
+          "description": "Ghostwriting for authors, from 50-page books to full manuscripts",
+          "price": "799.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "offeredBy": {
+            "@id": "https://www.dezignloop.com/#organization"
+          }
+        },
+        {
+          "@type": "Offer",
+          "position": 9,
+          "name": "Book Marketing",
+          "description": "Full book marketing: social, SEO, Amazon optimization, and media features",
+          "price": "8000.00",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "offeredBy": {
+            "@id": "https://www.dezignloop.com/#organization"
+          }
         }
       ]
     }
@@ -138,9 +174,13 @@ const pricingSchema = {
 
 
 export default function PricingPage() {
-   <script
+  return (
+    <>
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingSchema) }}
       />
-  return <PricingClient />;
+      <PricingClient />
+    </>
+  );
 }
