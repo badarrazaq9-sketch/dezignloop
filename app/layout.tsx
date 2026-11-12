@@ -46,6 +46,7 @@ const organizationSchema = {
   "@type": ["Organization", "LocalBusiness"],
   "@id": "https://www.dezignloop.com/#organization",
   "name": "DezignLoop",
+  "alternateName": "DesignLoop",
   "url": "https://www.dezignloop.com",
   "logo": {
     "@type": "ImageObject",

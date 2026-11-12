@@ -71,6 +71,10 @@ export const FAQSection = () => {
 
        <div className="bg-slate-50 dark:bg-slate-900 p-6 md:p-8 rounded-[2rem] border border-slate-100 dark:border-slate-800 space-y-4">
   <AccordionItem
+    question="Is it DezignLoop or DesignLoop?"
+    answer="Our brand is DezignLoop — spelled with a Z. If you searched for DesignLoop, you've found the right place: same company, same team, same services."
+  />
+  <AccordionItem
     question="How quickly can I expect delivery?"
     answer="For our starter packages, we deliver initial concepts within 48 hours. Most web design, branding, and app development projects launch within 7–14 days depending on scope."
   />
