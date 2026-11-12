@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/services/mobile-app-development',
     '/services/custom-development',
     '/services/video-editing',
+    '/services/ebook-services',
     '/services/mascot-logo',
     '/services/ThreeDlogo',
     '/portfolio',

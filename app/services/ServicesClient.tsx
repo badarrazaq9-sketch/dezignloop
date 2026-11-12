@@ -18,6 +18,7 @@ import {
   Video,
   Smile,
   Box,
+  BookOpen,
 } from 'lucide-react';
 import BookingSection from '@/components/BookingForm';
 import TestimonialsSection from '@/components/TestimonialsSection';
@@ -167,6 +168,16 @@ const services: Service[] = [
     whoFor: ['Content Creators', 'Brands', 'Businesses'],
     icon: Video,
     slug: 'video-editing',
+  },
+
+  {
+    title: 'eBook Services',
+    tagline: 'From manuscript to published book',
+    description:
+      'Professional eBook formatting, cover design, and publishing support for authors ready to sell their book.',
+    whoFor: ['Authors', 'Coaches', 'Small Businesses', 'Creators'],
+    icon: BookOpen,
+    slug: 'ebook-services',
   },
 ];
 
