@@ -1,15 +1,13 @@
 // components/QuestionnaireForm.tsx
 // ─────────────────────────────────────────────────────────────────────────
-// SCAFFOLD questionnaire form. The owner will supply his own questionnaire
-// form code later — when it arrives, replace THIS component only. The page
-// shell (app/questionnaire/page.tsx) and the API (app/api/questionnaire)
-// stay untouched.
+// DezignLoop project questionnaire — the real form (replaces the Oct 2026
+// scaffold). Four steps, modeled on TechCore Studio's proven Website
+// Workbook, adapted to DezignLoop's services and light theme.
 //
-// Field mapping to the popup_leads table (via POST /api/questionnaire):
-//   name, email, phone, service, budget, time_preference
-// The step-2 business details and step-4 "anything else" text are sent as
-// `message`, which the API folds into the service value (the schema has no
-// notes column), so no answer is lost.
+// Field mapping to POST /api/questionnaire:
+//   name, email, phone, service, budget, timePreference, business,
+//   message (all extra answers, labeled one per line — the API folds
+//   `message` into the service value so no answer is ever lost).
 // ─────────────────────────────────────────────────────────────────────────
 'use client';
 
@@ -24,6 +22,25 @@ const SERVICES = [
   'Custom Software',
   'Something Else',
 ];
+
+const INDUSTRIES = [
+  'Technology & Software',
+  'Healthcare & Medical',
+  'Finance & Banking',
+  'Retail & E-commerce',
+  'Education & Training',
+  'Real Estate',
+  'Hospitality & Tourism',
+  'Restaurant & Food',
+  'Fitness & Wellness',
+  'Fashion & Beauty',
+  'Construction & Trades',
+  'Consulting & Coaching',
+  'Non-Profit',
+  'Other',
+];
+
+const LOGO_OPTIONS = ['Yes, I have one', 'No, I need one', 'Not sure yet'];
 
 const BUDGETS = [
   'Under $1,000',
@@ -43,8 +60,8 @@ const TIMELINES = [
 
 const STEP_TITLES = [
   'Your details',
-  'Your business & what you need',
-  'Budget & timeline',
+  'Your business & project',
+  'Budget, timeline & setup',
   'Anything else?',
 ];
 
@@ -52,10 +69,27 @@ interface FormState {
   name: string;
   email: string;
   phone: string;
+  industry: string;
+  businessName: string;
   service: string;
-  businessDetails: string;
+  logo: string;
+  slogan: string;
+  purpose: string;
+  hasWebsite: string;
+  existingWebsiteUrl: string;
+  colorPreferences: string;
+  competitors: string;
+  paymentIntegration: string;
+  specificRequirements: string;
+  contentPages: string;
   budget: string;
   timeline: string;
+  hasDomain: string;
+  domainProvider: string;
+  domainUsername: string;
+  hasHosting: string;
+  hostingProvider: string;
+  hostingUsername: string;
   notes: string;
 }
 
@@ -63,15 +97,63 @@ const INITIAL: FormState = {
   name: '',
   email: '',
   phone: '',
+  industry: '',
+  businessName: '',
   service: '',
-  businessDetails: '',
+  logo: '',
+  slogan: '',
+  purpose: '',
+  hasWebsite: '',
+  existingWebsiteUrl: '',
+  colorPreferences: '',
+  competitors: '',
+  paymentIntegration: '',
+  specificRequirements: '',
+  contentPages: '',
   budget: '',
   timeline: '',
+  hasDomain: '',
+  domainProvider: '',
+  domainUsername: '',
+  hasHosting: '',
+  hostingProvider: '',
+  hostingUsername: '',
   notes: '',
 };
 
 const inputClass =
   'w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900 focus:ring-2 focus:ring-primary focus:border-primary outline-none transition';
+
+const labelClass = 'block text-sm font-medium text-gray-700 mb-2';
+
+function ChoiceRow({
+  value,
+  onChange,
+  options,
+}: {
+  value: string;
+  onChange: (v: string) => void;
+  options: string[];
+}) {
+  return (
+    <div className="flex flex-wrap gap-2">
+      {options.map((opt) => (
+        <button
+          key={opt}
+          type="button"
+          onClick={() => onChange(opt)}
+          className={`px-4 py-2.5 rounded-lg border-2 text-sm font-semibold transition ${
+            value === opt
+              ? 'border-primary bg-primary text-white'
+              : 'border-gray-300 bg-white text-gray-700 hover:border-primary'
+          }`}
+        >
+          {opt}
+        </button>
+      ))}
+    </div>
+  );
+}
 
 export default function QuestionnaireForm() {
   const [step, setStep] = useState(0);
@@ -80,12 +162,18 @@ export default function QuestionnaireForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const set = (field: keyof FormState) => (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
-    >
-  ) => {
-    setForm((prev) => ({ ...prev, [field]: e.target.value }));
+  const set =
+    (field: keyof FormState) =>
+    (
+      e: React.ChangeEvent<
+        HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement
+      >
+    ) => {
+      setForm((prev) => ({ ...prev, [field]: e.target.value }));
+    };
+
+  const setValue = (field: keyof FormState) => (value: string) => {
+    setForm((prev) => ({ ...prev, [field]: value }));
   };
 
   const stepValid = (): boolean => {
@@ -123,12 +211,47 @@ export default function QuestionnaireForm() {
     setError(null);
     setIsSubmitting(true);
 
-    const messageParts = [
-      form.businessDetails.trim()
-        ? `About the business: ${form.businessDetails.trim()}`
-        : '',
-      form.notes.trim(),
-    ].filter(Boolean);
+    const lines: Array<[string, string]> = [
+      ['Industry', form.industry],
+      ['Business name', form.businessName],
+      ['Logo', form.logo],
+      ['Slogan', form.slogan],
+      ['Purpose of the website', form.purpose],
+      [
+        'Existing website',
+        form.hasWebsite === 'yes'
+          ? form.existingWebsiteUrl.trim() || 'Yes'
+          : form.hasWebsite === 'no'
+            ? 'No'
+            : '',
+      ],
+      ['Color preferences', form.colorPreferences],
+      ['Competitors / sites you like', form.competitors],
+      ['Payment integration', form.paymentIntegration],
+      ['Specific requirements', form.specificRequirements],
+      ['Content pages', form.contentPages],
+      [
+        'Domain',
+        form.hasDomain === 'yes'
+          ? `Yes — ${form.domainProvider.trim()}${form.domainUsername.trim() ? ` (${form.domainUsername.trim()})` : ''}`.trim()
+          : form.hasDomain === 'no'
+            ? 'No'
+            : '',
+      ],
+      [
+        'Hosting',
+        form.hasHosting === 'yes'
+          ? `Yes — ${form.hostingProvider.trim()}${form.hostingUsername.trim() ? ` (${form.hostingUsername.trim()})` : ''}`.trim()
+          : form.hasHosting === 'no'
+            ? 'No'
+            : '',
+      ],
+      ['Anything else', form.notes],
+    ];
+    const message = lines
+      .filter(([, v]) => v.trim() !== '')
+      .map(([k, v]) => `${k}: ${v.trim()}`)
+      .join('\n');
 
     try {
       const res = await fetch('/api/questionnaire', {
@@ -138,10 +261,11 @@ export default function QuestionnaireForm() {
           name: form.name.trim(),
           email: form.email.trim(),
           phone: form.phone.trim() || undefined,
+          business: form.businessName.trim() || undefined,
           service: form.service,
           budget: form.budget,
           timePreference: form.timeline,
-          message: messageParts.join(' | ') || undefined,
+          message: message || undefined,
         }),
       });
       const data = await res.json().catch(() => null);
@@ -223,9 +347,7 @@ export default function QuestionnaireForm() {
         {step === 0 && (
           <>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Full name *
-              </label>
+              <label className={labelClass}>Full name *</label>
               <input
                 type="text"
                 value={form.name}
@@ -236,9 +358,7 @@ export default function QuestionnaireForm() {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Email *
-              </label>
+              <label className={labelClass}>Email *</label>
               <input
                 type="email"
                 value={form.email}
@@ -249,9 +369,7 @@ export default function QuestionnaireForm() {
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Phone (optional)
-              </label>
+              <label className={labelClass}>Phone (optional)</label>
               <input
                 type="tel"
                 value={form.phone}
@@ -260,15 +378,38 @@ export default function QuestionnaireForm() {
                 placeholder="+1 (555) 000-0000"
               />
             </div>
+            <div>
+              <label className={labelClass}>Industry</label>
+              <select
+                value={form.industry}
+                onChange={set('industry')}
+                className={inputClass}
+              >
+                <option value="">Select your industry...</option>
+                {INDUSTRIES.map((i) => (
+                  <option key={i} value={i}>
+                    {i}
+                  </option>
+                ))}
+              </select>
+            </div>
           </>
         )}
 
         {step === 1 && (
           <>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                What do you need? *
-              </label>
+              <label className={labelClass}>Business name</label>
+              <input
+                type="text"
+                value={form.businessName}
+                onChange={set('businessName')}
+                className={inputClass}
+                placeholder="Your business or brand name"
+              />
+            </div>
+            <div>
+              <label className={labelClass}>What do you need? *</label>
               <select
                 value={form.service}
                 onChange={set('service')}
@@ -284,15 +425,114 @@ export default function QuestionnaireForm() {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Tell us about your business
+              <label className={labelClass}>Do you have a logo?</label>
+              <ChoiceRow
+                value={form.logo}
+                onChange={setValue('logo')}
+                options={LOGO_OPTIONS}
+              />
+              {form.logo === 'Yes, I have one' && (
+                <p className="mt-2 text-sm text-gray-500">
+                  You can send it to us by reply email after submitting —
+                  no upload needed here.
+                </p>
+              )}
+            </div>
+            <div>
+              <label className={labelClass}>Business slogan (optional)</label>
+              <input
+                type="text"
+                value={form.slogan}
+                onChange={set('slogan')}
+                className={inputClass}
+                placeholder="Your tagline or slogan"
+              />
+            </div>
+            <div>
+              <label className={labelClass}>
+                What is the main purpose of the website?
               </label>
               <textarea
-                value={form.businessDetails}
-                onChange={set('businessDetails')}
+                value={form.purpose}
+                onChange={set('purpose')}
                 className={inputClass}
-                rows={4}
-                placeholder="What does your business do, who are your customers, and what should this project achieve?"
+                rows={3}
+                placeholder="Generate leads, sell products, showcase a portfolio..."
+              />
+            </div>
+            <div>
+              <label className={labelClass}>
+                Do you already have a website?
+              </label>
+              <ChoiceRow
+                value={form.hasWebsite}
+                onChange={setValue('hasWebsite')}
+                options={['yes', 'no']}
+              />
+              {form.hasWebsite === 'yes' && (
+                <input
+                  type="text"
+                  value={form.existingWebsiteUrl}
+                  onChange={set('existingWebsiteUrl')}
+                  className={`${inputClass} mt-3`}
+                  placeholder="Your current website URL"
+                />
+              )}
+            </div>
+            <div>
+              <label className={labelClass}>Any color preferences?</label>
+              <input
+                type="text"
+                value={form.colorPreferences}
+                onChange={set('colorPreferences')}
+                className={inputClass}
+                placeholder="e.g. Blue & white, dark theme, warm earth tones..."
+              />
+            </div>
+            <div>
+              <label className={labelClass}>
+                Top 3 competitors or websites you like
+              </label>
+              <textarea
+                value={form.competitors}
+                onChange={set('competitors')}
+                className={inputClass}
+                rows={3}
+                placeholder="Paste URLs of websites you like or compete with..."
+              />
+            </div>
+            <div>
+              <label className={labelClass}>
+                Any payment integration needed?
+              </label>
+              <input
+                type="text"
+                value={form.paymentIntegration}
+                onChange={set('paymentIntegration')}
+                className={inputClass}
+                placeholder="e.g. Stripe, PayPal, Square, or none..."
+              />
+            </div>
+            <div>
+              <label className={labelClass}>
+                Specific requirements or preferences
+              </label>
+              <textarea
+                value={form.specificRequirements}
+                onChange={set('specificRequirements')}
+                className={inputClass}
+                rows={3}
+                placeholder="Any special features, integrations, or requirements..."
+              />
+            </div>
+            <div>
+              <label className={labelClass}>Content pages you will need</label>
+              <textarea
+                value={form.contentPages}
+                onChange={set('contentPages')}
+                className={inputClass}
+                rows={3}
+                placeholder="e.g. Home, About Us, Services, Portfolio, Contact, FAQs..."
               />
             </div>
           </>
@@ -301,9 +541,7 @@ export default function QuestionnaireForm() {
         {step === 2 && (
           <>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Budget range *
-              </label>
+              <label className={labelClass}>Budget range *</label>
               <select
                 value={form.budget}
                 onChange={set('budget')}
@@ -319,9 +557,7 @@ export default function QuestionnaireForm() {
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                When do you want to start? *
-              </label>
+              <label className={labelClass}>When do you want to start? *</label>
               <select
                 value={form.timeline}
                 onChange={set('timeline')}
@@ -336,13 +572,65 @@ export default function QuestionnaireForm() {
                 ))}
               </select>
             </div>
+            <div>
+              <label className={labelClass}>Do you have a domain?</label>
+              <ChoiceRow
+                value={form.hasDomain}
+                onChange={setValue('hasDomain')}
+                options={['yes', 'no']}
+              />
+              {form.hasDomain === 'yes' && (
+                <div className="grid sm:grid-cols-2 gap-3 mt-3">
+                  <input
+                    type="text"
+                    value={form.domainProvider}
+                    onChange={set('domainProvider')}
+                    className={inputClass}
+                    placeholder="Domain provider"
+                  />
+                  <input
+                    type="text"
+                    value={form.domainUsername}
+                    onChange={set('domainUsername')}
+                    className={inputClass}
+                    placeholder="Domain username"
+                  />
+                </div>
+              )}
+            </div>
+            <div>
+              <label className={labelClass}>Do you have hosting?</label>
+              <ChoiceRow
+                value={form.hasHosting}
+                onChange={setValue('hasHosting')}
+                options={['yes', 'no']}
+              />
+              {form.hasHosting === 'yes' && (
+                <div className="grid sm:grid-cols-2 gap-3 mt-3">
+                  <input
+                    type="text"
+                    value={form.hostingProvider}
+                    onChange={set('hostingProvider')}
+                    className={inputClass}
+                    placeholder="Hosting provider"
+                  />
+                  <input
+                    type="text"
+                    value={form.hostingUsername}
+                    onChange={set('hostingUsername')}
+                    className={inputClass}
+                    placeholder="Hosting username"
+                  />
+                </div>
+              )}
+            </div>
           </>
         )}
 
         {step === 3 && (
           <>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className={labelClass}>
                 Anything else we should know? (optional)
               </label>
               <textarea
@@ -360,6 +648,11 @@ export default function QuestionnaireForm() {
               <p>
                 <strong>Email:</strong> {form.email}
               </p>
+              {form.businessName && (
+                <p>
+                  <strong>Business:</strong> {form.businessName}
+                </p>
+              )}
               <p>
                 <strong>Service:</strong> {form.service}
               </p>
