@@ -20,7 +20,7 @@ export default function QuestionnairePage() {
   return (
     <main className="bg-gray-50">
       <Navbar />
-      <section className="max-w-3xl mx-auto px-4 sm:px-6 pt-16 pb-20">
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 pt-28 md:pt-32 pb-20">
         <div className="text-center mb-10">
           <h1 className="text-4xl sm:text-5xl font-black text-gray-900 mb-4">
             Tell Us About Your <span className="text-primary">Project</span>
