@@ -11,7 +11,7 @@
 // ─────────────────────────────────────────────────────────────────────────
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const SERVICES = [
   'Web Design',
@@ -161,6 +161,21 @@ export default function QuestionnaireForm() {
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  // The "Send my answers" button appears in the exact spot the step-3
+  // "Continue" button just occupied, so a double-click / double-tap on
+  // Continue can land on Send and submit step 4 with empty notes before
+  // the user ever sees the notes box (observed in the 2026-11-23 live
+  // test). Keep Send disarmed briefly after arriving on the last step.
+  const [submitArmed, setSubmitArmed] = useState(false);
+
+  useEffect(() => {
+    if (step === STEP_TITLES.length - 1) {
+      setSubmitArmed(false);
+      const t = setTimeout(() => setSubmitArmed(true), 800);
+      return () => clearTimeout(t);
+    }
+    setSubmitArmed(false);
+  }, [step]);
 
   const set =
     (field: keyof FormState) =>
@@ -208,6 +223,10 @@ export default function QuestionnaireForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    // Ignore a submit that lands within the arming window after step 4
+    // appears (double-click carry-over from Continue) — the button is
+    // also disabled then, this is the second line of defence.
+    if (!submitArmed) return;
     setError(null);
     setIsSubmitting(true);
 
@@ -687,7 +706,7 @@ export default function QuestionnaireForm() {
           ) : (
             <button
               type="submit"
-              disabled={isSubmitting}
+              disabled={isSubmitting || !submitArmed}
               className="px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-primary-dark text-white text-sm font-semibold hover:opacity-90 transition disabled:opacity-70 disabled:cursor-not-allowed flex items-center gap-2"
             >
               {isSubmitting ? (
